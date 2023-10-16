@@ -1,0 +1,50 @@
+{% extends "partial/layout.html.twig" %}
+
+{% block title %}{{ isTrial==true?t("account_successfully_temp_converted", "Temp Account Converted"):t("account_successfully_registered", "Account Created") }}{% endblock %}
+{% block description %}{{ t("register_complete_meta_description", "Your registration has been completed.") }}{% endblock %}
+{% block keywords %}{{ t("register_complete_meta_keywords", "registration, completed, file, hosting, site") }}{% endblock %}
+
+
+
+{% block body %}
+<section class="" id="main-body">
+<div class="container ">
+<div class="row">
+                       
+<!-- LOGIN  FORM -->
+    <section class="account-info-section">  
+        <div class="container">
+            <div class="account-info-box">
+                <div class="account-info-section-text text-center">
+                  <h2 style="margin-bottom: 20px;">{{ isTrial==true?t("account_successfully_temp_converted", "Temp Account Converted"):t("account_successfully_registered", "Account Created") }}</h2>                    
+                    {% if isTrial==true %}
+                        <p>{{ t("register_complete_main_text_temp_converted", "We've converted your temp account to a registered account and sent your new password via email. Please check your spam filters to ensure emails from this site get through. ") }}</p>
+                    {% else %}
+                        <p>{{ t("register_complete_main_text", "We've sent an email to your registered email address with your access password. Please check your spam filters to ensure emails from this site get through. ") }}</p>
+                    {% endif %}
+
+                  </form>
+                  
+                      <span class="type--fine-print block" style="margin-top: 41px;display: block;text-align: center;">
+
+<div class="choose-button" style="display: inline-block;">
+                        <a class="choose-btn button-effect" href="{{ CORE_SITE_PATH }}/account/login">{{ t("login", "login")|title }}</a>
+                    </div>                    
+                       
+                    </span>
+            </div>
+            
+        </div>
+    </section>    
+ 
+
+    </div>
+</div>
+
+
+
+          
+        
+        
+       
+{% endblock %}

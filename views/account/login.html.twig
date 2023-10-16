@@ -1,0 +1,77 @@
+{% extends "partial/layout.html.twig" %}
+
+{% block title %}{{ t("login_page_name", "Login") }}{% endblock %}
+{% block description %}{{ t("login_meta_description", "Login to your account") }}{% endblock %}
+{% block keywords %}{{ t("login_meta_keywords", "login, register, image, picture, pic, img, hosting, sharing, upload, storage, site, website") }}{% endblock %}
+
+{% block body %}
+<section class="" id="main-body">
+<div class="container ">
+<div class="row">
+                       
+<!-- LOGIN  FORM -->
+    <section class="account-info-section">  
+        <div class="container">
+            <div class="account-info-box">
+                <div class="account-info-section-text text-center">
+                <h1 class="mb-xl-3 mb-lg-3 mb-md-3 mb-sm-3 mb-2">{{ t("login_page_name", "Login") }}</h1>
+                
+                 {% if msg_page_errors is defined %}
+                    <div class="alert bg--error">
+                        <div class="alert__body"><i class="fa fa-exclamation-triangle color--error"></i>&nbsp;&nbsp;{% if msg_page_errors is defined %}{{ msg_page_errors|join('. ') }}{% endif %}</div>
+                    </div>
+                    {% elseif msg_page_successes is defined %}
+                    <div class="alert bg--success">
+                        <div class="alert__body"><i class="fa fa-check color--success"></i>&nbsp;&nbsp;{% if msg_page_successes is defined %}{{ msg_page_successes|join('. ') }}{% endif %}</div>
+                    </div>
+                {% endif %}
+                    
+                <p>{{ t("login_intro_text", "Please enter your username and password below to login.") }}</p>
+                </div>
+                <div id="form_result"></div>
+                <form class="account-info-form" id="form_login" method="POST"  action="{{ CORE_SITE_PATH }}/account/login" >
+
+                    <div class="form-row">
+                        <div class="col">
+                            <div class="form-group">    
+                                <input type="text" class="form-control" placeholder="Username" name="username" id="username"> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <div class="form-group">    
+                                <input type="password" class="form-control"  name="password" id="password" placeholder="{{ t("password", "password")|title }}"> 
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+                      
+                    </div>
+                    <div class="submitform-button">
+                    <button type="submit" id="submit" class="submitform-btn button-effect" >{{ t("login", "login")|title }}</button>
+                    </div>
+                    <input type="hidden" value="1" name="submitme"/>
+                  </form>
+                  
+                      <span class="type--fine-print block" style="margin-top: 41px;display: block;text-align: center;">
+
+                        <a href="{{ CORE_SITE_PATH }}/register">{{ t("create_account", "Create account")|title }}</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{{ CORE_SITE_PATH }}/account/forgot_password">{{ t("forgot_password", "forgot password")|title }}</a>
+                    </span>
+            </div>
+            
+        </div>
+    </section>    
+ 
+
+    </div>
+</div>
+
+
+
+          
+        
+        
+       
+{% endblock %}

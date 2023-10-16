@@ -1,0 +1,1453 @@
+@media screen and (max-width: 1440px) {
+    .banner-img { width: 554px; position: absolute; float: right; top: -57px; right: 10px; }
+}
+
+@media screen and (max-width: 1024) {
+    #Comprison_pricingplan ul {
+        padding-bottom: 0;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .premium-text-section {
+      padding: 74px 0px 210px 0px;
+    }
+    .about-us-price{
+         padding-top: 0px;        
+    }
+
+    #banner_slider .carousel-inner { padding: 60px 0 30px 0; }
+    #banner_slider .carousel-control-prev-icon { padding: 16px 12px; }
+    #banner_slider .carousel-control-next-icon { padding: 16px 12px; }
+    .search-btn { left: inherit; bottom: 0px; right: 0;}
+    .price li:first-child { padding-left: 0px; }
+    .price li { margin-right: 22px; }
+    .field-background .field { padding: 50px 70px; top: -105px; }
+    .premium-section { padding: 150px 0px 70px 0px; }
+    .premium-section-setting { padding-bottom: 30px; }
+    .banner-img, .slider-2 .banner-img { width: 463px; position: relative; float: right; top: -142px; right: -10px; }
+    .slider-3 .banner-img  { width: 463px; position: relative; float: right; top: -100px; right: -10px; }
+    #banner_slider .carousel-item { min-height: 573px; }
+    .hosting-text, .server-text, .vps-text { left: 160px; }
+    .hosting-payment-card, .server-payment-card, .vps-payment-card { padding: 48px 30px 61px 30px; }
+    .text-paragraph p { padding: 8px 0 0 0;}
+    .banner-text { width: 55%;}
+    .slider-2 p, .slider-3 p { padding-right: 6%; margin-bottom: 20px;}
+    .text-paragraph { width: 50%; }
+    .map-container img { width: 100%; }
+    .canada { top: 142px; left: 148px; }
+    .los-angeles { top: 198px; left: 124px; }
+    .dallas { top: 203px; left: 170px; }
+    .atlanta { top: 179px; left: 206px; }
+    .united-kingdom { top: 145px; left: 408px; }
+    .germany { top: 155px; left: 437px; }
+    .moscow { top: 141px; left: 523px; }
+    .india { top: 225px; right: 252px; }
+    .south-korea { top: 184px; right: 137px; }
+    .japan { top: 176px; right: 102px; }
+    .australia { top: 374px; right: 83px; }
+    .review-section { padding: 87px 0 0px 0; }
+    .contact-planbox { text-align: center; padding: 28px 20px;}
+    .contact-planbox img{ padding-bottom: 10px;}
+    .contact-image { margin: 0 auto;}
+    .contact-section { position: relative; bottom: -74px; }
+    .footer-hosting, .footer-company, .footer-contact { padding-left: 0px;}
+    .hosting-list li a, .company-list li a, .contact-list li a { padding-left: 0px; font-size: 14px;}
+    .about-sub-section { background-position: 65% 41px; }
+    .about-us-banner-section p { margin-bottom: 35px; }
+    .about-us-price p { margin-bottom: 0px;}
+    .vision-plan-box p { padding: 0;}
+    .history-section .plan-circle:after { left: 117px; }
+    .choose-image { max-width: 80%; margin: 0 auto;}
+    .choose-section figure { text-align: center;}
+    .choose-text { padding-top: 0px; }
+    .team-plan-box { padding: 50px 30px; }
+    .contact-us-banner-text { text-align: center;}
+    .contact-us-plan-box { padding: 50px; }
+    .success-section { padding: 70px 0 150px 0; }
+    .success-section-text { margin-bottom: 60px; }
+    .contact-section-inner { bottom: 0px; }
+    .dedicated-server-plan-box { padding: 50px 26px; }
+    .dedicated-server-maintainance h4 { padding: 0 15%; }
+    .reseller-banner-section p { padding: 0 15%; }
+    .reseller-plan-box { padding: 50px 35px; }
+    .reseller-guarrantees-plan-box { padding: 51px 31px; }
+    #Comprison_pricingplan table thead th:nth-child(2), #Comprison_pricingplan table thead th:nth-child(3), #Comprison_pricingplan table .table thead th:nth-child(4) { width: 200px; padding: 21px 0px; }
+    .reseller-table-text { right: 279px; }
+    .reliable-shared-hsoting-section-image { max-width: 350px; margin: 0 auto; }
+    .reliable-shared-hsoting-section-text { padding-top: 40px; }
+    .shared-plan-box { padding: 50px 35px; }
+    .tabs-section  { display: block; vertical-align: top; }
+    .tabs-section li { display: inline-block; text-align: center; vertical-align: top; }
+    .shared-banner-section { padding: 70px 0px 170px 0px; }
+    .tabs-section .nav-tabs { margin: 0 auto 144px; }
+    .tabs-section { margin-top: -182px; }
+    .account-text { padding-top: 0px; }
+    .account-box-section { padding: 70px 0px 207px 0px; }
+    .account-image { margin: 0 auto; }
+    .guarrantees-section-variation-2 p { padding: 0 10%; }
+    .slider_content { padding: 55px 30px 78px 30px; width: 32.5%; }
+    .account-section .select-form { background-position: 97% 21px; }
+    .sliderbox { width: 67.5%;  padding: 60px 60px 25px 60px; }
+    .domain-management-image-2 { margin: 0px 0px 0px 20px; }
+    .reseller-feature-plan-box-image-list-variation-1 { margin: 0px 0px 0px 20px; }
+    .landing-page-server-bottom-left-image { left: -110px; bottom: -60px; width: 30%; opacity: .1; }
+    .landing-page-server-bottom-right-image { right: -110px; bottom: -60px; width: 30%; opacity: .1; }
+    .domain-plan-box-image-list { max-width: 120px; height: 30px; }
+    .landing-page-banner-section p { padding: 0 8%; }
+    .support-natix-host-text p { padding: 0 1%; }
+    .support-natix-host-plan-box { padding: 30px 19px; }
+    .support-natix-host-plan-box-btn { padding: 13px 40px; }
+    .feature-box { padding: 23px; }
+    .redundancy-section p { padding: 0 1%; }
+    .redundancy-plan-box { padding: 49px 34px; }
+    .redundancy-image-list { max-width: 60px; }
+    .redundancy-image-list img { max-height: 60px; }
+    .redundancy-plan-box h4 { padding-top: 15px; }
+    .content-block span { font-size: 14px; }
+    .content-block { /*! padding: 60px 40px; */ }
+    .affiliate-program-plan-box h4 { padding: 0 8%; }
+    .affiliate-program-plan-box { padding: 51px 30px; }
+    .ssl-certificate-query-text { padding-top: 0px; }
+    .choose-ssl-certificate-section .our-datacenter-plan-box-inner { padding: 40px 29px; }
+    .choose-ssl-certificate-section .our-datacenter-plan-box-inner h4 { font-size: 22px;}
+    .home-image-field-section .field-background .field {  padding: 0px; top: 0px; }
+    .home-image-field-section ul { padding-right: 0% !important; padding-left: 10% !important; }
+    .home-image-sub-section #banner_slider .carousel-indicators { bottom: 160px; }
+    .home-image-sub-section #banner_slider .carousel-item { min-height: 400px; }
+    .home-image-sub-section #banner_slider .carousel-inner { padding: 100px 0 100px 0; }
+    .home-image-sub-section #banner_slider .carousel-indicators { bottom: 115px; }
+    .premium-section-inner { margin-top: -245px; }
+    #home-image-feature-section .feature-plan-box { padding: 50px 20px 44px 20px; }
+    #home-image-footer-field .footer-form { width: 66%; }
+    .home-image-web-hosting-plan-box:after { top: 235px; }
+    .home-gaming-sub-section .slider-2 p, .home-gaming-sub-section .slider-3 p { padding: 0 17%; margin-bottom: 39px; }
+    .home-gaming-sub-section #banner_slider .carousel-indicators { bottom: 95px; }
+    #premium-plans-section .plan { padding: 30px 11px !important; }
+    #home-gaming-vision-section .vision-plan-box p { padding: 0 2%; }
+    #home-gaming-network-map .map-container { padding-bottom: 0px; }
+    #home-feature-section .feature-plan-box { padding: 40px 16px 40px 16px; }
+}
+  
+
+@media screen and (max-width: 992px) {
+    .premium-text-section {
+      padding: 74px 0px 280px 0px !important;
+    }
+ .first-tab-btn, .tab-btn { font-size: 14px !important; } 
+    .account-text{
+        text-align: center;
+    }
+    
+ .mobile-account-toolbar-wrapper{display:none}   
+ 
+ .navbar-nav li:last-child{margin-left:0px;}
+.navbar li a{font-size:14px;line-height:16px;padding:10px 30px!important;}
+.navbar .dropdown-menu li a{background:#f54961;color:var(--global--color-white)!important;padding:12px 0px 2px 30px!important;font-size:13px;line-height:20px;text-decoration:none;}
+.navbar .hosting-dropdown li a{background:#a28388;color:var(--global--color-white)!important;padding:5px 0px 10px 30px !important;font-size:13px;line-height:20px;text-decoration:none;border-radius: 10px;margin-top: 5px;}
+.navbar .hosting-dropdown{padding:10px;}
+
+.navbar .hosting-dropdown li a:last-child{padding-bottom:10px;}
+.dropdown-menu:before{display:none;}
+.navbar .dropdown-menu{background:#7e7273;}
+.navbar .dropdown-menu li a img{display:none;}
+.navbar-nav li:hover{text-decoration:none;}
+.navbar .dropdown-menu{border-radius:4px;border:none;}
+.navbar-nav li{border:none;margin-right:0;width:100%;}
+.navbar-nav li.nav-item.dropdown:hover ul.dropdown-menu-list a{filter:none;opacity:1;color:var(--global--color-white)!important;}
+    
+ .gallery-env { padding: 0px !important;} 
+.social li a{ margin: 0 5px 0 3px; }
+.navbar-toggler{ width: auto;}
+.navbar-toggler { margin-left: auto; border: none !important; padding: 0; color: var(--global--color-white); width: 50px; height: 40px; }
+header .container { max-width: initial!important; }
+.navbar-nav{display: flex; -ms-flex-direction: column; flex-direction: column; padding-left: 0; margin-bottom: 0; list-style: none;}
+.navbar-btn { padding: 0 !important; background: none; padding-left: 0; margin-left: 0;}
+.navbar-collapse { background: #9c8a8d; position: absolute; right: 18px; width: 28%; top: 65px; padding: 8px 0; z-index: 105;}
+.navbar-nav li.active > a { border-bottom: 0px; color: var(--global--color-yellow) !important; }
+.navbar-nav li.nav-item.dropdown  ul.dropdown-menu-list li.active a { color: var(--global--color-yellow) !important; }
+.navbar-nav  .dropdown-menu-list li.active a { color: var(--global--color-yellow) !important; }
+.navbar-nav li:last-child { margin-left: 0px;  }
+.navbar li a { font-size: 14px; line-height: 16px; padding: 10px 30px!important; }
+
+.navbar-nav .pages-dropdown { padding: 10px; }
+.navbar-nav .pages-dropdown li { border: none; }
+.navbar .hosting-dropdown { padding: 10px;}
+.navbar li a#navbarDropdown { outline: none;}
+.navbar-nav:hover a { filter: none; opacity: 1;  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1); }
+.navbar .hosting-dropdown li a:last-child { padding-bottom: 10px;}
+.dropdown-menu:before { display: none;}
+
+.navbar .dropdown-menu li a img { display: none;}
+.navbar-nav li:hover{ text-decoration: none;}
+.navbar .dropdown-menu { /*! border-radius: 0px; */ /*! border: none; */ }
+.navbar-nav li { border: none; margin-right: 0; width: 100%;}
+.navbar-light .navbar-toggler-icon { background: #fff; height: 2px; margin: 7px 0 0 0; width: 51%; float: right; }
+.navbar-light .navbar-toggler-icon:first-child { margin-top: 0px;}
+.navbar-brand { padding-top: 10px; }
+.navbar-logo { padding-top: 5px; }
+.navbar-btn:hover { box-shadow: none; }
+.banner-img, .slider-2 .banner-img, .slider-3 .banner-img { position: relative; top: 10px; right: 0px; float: left; left: 110px; width: 500px; margin-bottom: 20px;}
+#banner_slider .carousel-indicators { bottom: 63px; }
+.text-paragraph p { padding: 0;}
+#banner_slider .carousel-inner { /*! padding: 20px 0 70px 0; */ }
+#banner_slider .carousel-item { /*! min-height: 710px; */ }
+.social li:last-child{display: none; }
+.banner-text h1 { font-size: 39px; line-height: 45px; }
+.text-paragraph { width: 100%; text-align: center; }
+.banner-text .text-paragraph { padding: 0px 0% 0 0; font-size: 16px; line-height: 25px; }
+.banner-button { text-align: center;}
+.navbar-toggler:focus { outline: none;}
+.banner-text p { font-size: 16px; line-height: 25px; }
+.banner-text span { font-size: 16px; line-height: 25px; }
+.banner-text { width: 100%; text-align: center; }
+.primary-btn { padding: 14px 30px; }
+.secondary-btn { padding: 14px 30px; margin-left: 6px; }
+.search-btn { left: inherit; bottom: 0px; right: 0; font-size: 12px; padding: 12px 24px; }
+.field-background .field { padding: 40px 50px; top: -82px; }
+.account-form .form-control { padding: 20px 0px 20px 39px; }
+.price li { margin-right: 12px; font-size: 14px; }
+.hosting-text, .server-text, .vps-text { left: 525px; }
+.plan ul { margin-right: 20%; width: 40%;}
+.plan figure { margin-right: 35px;}
+.plan ul figure { margin-right: 0px; }
+.premium-section-setting { padding-bottom: 0px; }
+.guarrantee-text { text-align: center;}
+.plan-box-setting { padding-top: 55px;}
+.guarrantees-section { padding: 60px 0; }
+.guarrantee-text { padding-top: 0px; }
+.point { width: 1.2rem; height: 1.2rem; border: 3px solid var(--global--color-white); }
+.canada { top: 110px; left: 115px; }
+.los-angeles { top: 152px; left: 95px; }
+.dallas { top: 159px; left: 128px; }
+.atlanta { top: 141px; left: 159px; }
+.united-kingdom { top: 108px; left: 317px; }
+.germany { top: 119px; left: 340px; }
+.moscow { top: 112px; left: 400px; }
+.india { top: 173px; right: 192px; }
+.south-korea { top: 142px; right: 105px; }
+.japan { top: 133px; right: 76px; }
+.australia { top: 291px; right: 63px; }
+.data-section { padding: 60px 0; }
+.map-container { padding: 51px 0px 60px 0px; }
+.data-section h4 { padding: 0;}
+.features-section { padding: 70px 0; }
+.feature-heading { padding-bottom: 40px; }
+.feature-plan-box { padding: 40px 30px; }
+.review-section { padding: 55px 0 0px 0; }
+.review-section h1 { font-size: 35px; }
+.review-section-text br { display: none;}
+.review-section p { margin-bottom: 33px;}
+.contact-planbox h4 { font-size: 20px; }
+.contact-planbox p { font-size: 15px; line-height: 17px; }
+.review-section .heading-text { margin-bottom: 20px; }
+.contact-planbox { padding: 20px; }
+.footer-logo-setting { order: 4; padding-top: 30px;}
+.footer-company-setting { order: 2; padding-top: 30px;}
+.footer-section h5 { font-weight: 700; margin-bottom: 20px; }
+.footer-logo figure { margin-bottom: 15px; }
+.hosting-list li, .company-list li, .contact-list li { padding-bottom: 5px;}
+.footer-logo img { padding-bottom: 0px; }
+.footer-list { padding-top: 15px; }
+.footer-form { width: 100%; }
+.footer-setting { padding-top: 40px; }
+.footer-bar .footer-cards small { margin: 0px 4px 0px 15px; }
+.about-us-price { padding-top: 11px; margin-bottom: 73px;}
+ #aff-balance{  align-items: center ;justify-content: center;}    
+.about-us-banner-section { padding: 70px 0px 250px 0px; }
+.about-us-price p br{ display:  none;}
+.about-us-price p { margin-bottom: 0px;}
+.about-sub-section { background-position: 71% 41px; }
+.about-us-banner-text h1 { font-size: 45px; line-height: 55px; }
+.about-us-banner-text p { font-size: 16px; line-height: 22px;  margin-bottom: 25px; }
+.about-primary-btn { padding: 16px 42px; }
+.about-secondary-btn { padding: 16px 31px; }
+.about-us-banner-section h2 { font-size: 32px; line-height: 36px; }
+.about-us-banner-text-setting { text-align: center;}
+.vision-plan-box { padding: 50px }
+.vision-plan-box h4 { margin-bottom: 15px; }
+.vision-image-list { margin-bottom: 25px;}
+.history-section-text { margin-bottom: 50px; }
+.history-section .plan-circle:after { left: 87px; }
+.history-border { top: 50px; }
+.history-section h4 { margin-bottom: 10px; font-size: 18px; }
+.history-section .plan-circle { margin-bottom: 72px; }
+.history-section span { font-size: 22px; line-height: 26px; }
+.history-section { padding: 0px 0px 70px 0px; }
+.history-section { margin-top: -100px; }
+.history-section p { font-size: 15px; }
+.choose-section { padding: 70px 0px; }
+.choose-image {  max-width: 50%; }
+.choose-text { padding-top: 60px; text-align: center;}
+.choose-section h5 { margin-bottom: 15px; }
+.choose-section p { line-height: 27px; }
+.team-section { padding: 70px 0px; }
+.team-heading { margin-bottom: 50px; }
+.team-plan-box { padding: 30px; }
+.team-plan-box figure { margin-bottom: 30px; }
+.team-plan-box h4 { font-size: 21px; line-height: 18px; }
+.team-plan-box p { font-size: 14px; line-height: 14px; margin-bottom: 25px; }
+.team-list li { padding: 0 10px; }
+.team-list li:first-child { padding-left: 0px;}
+.success-section-text { margin-bottom: 50px; }
+.success-plan-box { padding: 50px 40px; }
+.account-info-section { /*! padding: 494px 0px 90px 0px; */ }
+.account-info-section-plan-box p { padding: 0 10%; }
+.content-box-section { /*! padding: 70px 0px; */ }
+.dedicated-server-plan-box-section { padding-top: 70px;}
+.dedicated-server-plan-box-section-inner { position: relative; top: 0px; }
+.dedicated-server-plan-box { padding: 50px; }
+.dedicated-server-plan-box ul { width: 45%;}
+.dedicated-server-maintainance { padding: 70px 0px; margin-top: 0px;}
+.dedicated-server-maintainance h4 { padding: 0 6%; }
+.dedicated-hosting-plan-section { padding: 70px 0px; }
+.dedicated-hosting-plan-section p { padding: 0 15%; }
+.dedicated-server-features-plan-box { padding: 80px; }
+.dedicated-server-features-section-setting { order: 1;}
+.dedicated-server-features-section-setting-2 { order: 2;}
+.dedicated-hosting-plan-image { margin: 0 auto; }
+.dedicated-hosting-plan-image-list {  margin: 0 auto; }
+.dedicated-server-feature-image-list { margin: 0 auto 40px; }
+.dedicated-server-feature-network-img, .dedicated-server-feature-technology-img, .dedicated-server-feature-control-panel-img { margin-bottom: 40px; }
+.dedicated-server-features-plan-box p { margin-bottom: 0px;}
+.dedicated-server-features-section { padding: 70px 0px; }
+.dedicated-server-features-section-text { margin-bottom: 50px; }
+.dedicated-server-support-plan-box h4 { line-height: 28px; }
+.dedicated-server-support-plan-box p { margin-bottom: 15px; }
+.dedicated-server-support-plan-box { padding: 60px 30px; }
+.dedicated-server-support-plan-box-section { padding: 70px 0px; }
+.dedicated-server-support-plan-box-section-text { margin-bottom: 50px; }
+.dedicated-server-support-plan-box-section h1 { font-size: 34px; }
+.dedicated-support-btn { padding: 14px 40px; }
+.dedicated-server-support-plan-box .variation-2 { padding: 14px 30px; }
+.dedicated-server-support-plan-box span { font-size: 16px; }
+.accordion-section { padding: 70px 0px 0px 0px; }
+.accordion-section-text { margin-bottom: 40px; }
+.file-manager-box h1 { font-size: 44px; line-height: 35px; }
+.file-manager-box { padding: 70px 0px; }
+.domain-plan-box-section-inner { position: relative; top: 0px;}
+.domain-plan-box-section { padding-top: 70px}
+.download-table-box { padding: 60px 60px; }
+.domain-management-section { padding: 70px 0px; }
+.download-table-box-setting-1 { order: 1;}
+.download-table-box-setting-2 { order: 2;}
+.domain-management-image-1, .domain-management-image-2 { margin: 0 auto; max-width: 150px;}
+.download-table { padding: 70px 0px; }
+.download-table .table thead th { font-size: 16px; }
+.download-table .table tbody td, .download-table .table tbody td .price { font-size: 14px; } 
+.download-table .table tbody th .popular, .download-table .table tbody th .sale { font-size: 10px; }
+.reseller-banner-section { padding: 70px 0px; }
+.reseller-banner-section p { padding: 0 5%; }
+.reseller-banner-section h1 { font-size: 44px; line-height: 35px; }
+.reseller-plan-box-section-inner { top: 0px; }
+.reseller-plan-box-section { padding-top: 70px;}
+.reseller-plan-box { padding: 50px; }
+.reseller-feature-section { margin-top: 0px; padding: 70px 0px;}
+.reseller-feature-text { margin-bottom: 60px; }
+.reseller-feature-plan-box { padding: 58px 32px; }
+.reseller-feature-plan-box-setting-1 { order: 1;}
+.reseller-feature-plan-box-setting-2 { order: 2;}
+.reseller-plan-box figure { margin-bottom: 33px; }
+.reseller-feature-plan-box-image-list-variation-1, .reseller-feature-plan-box-image-list { margin: 0 auto; }
+.reseller-plan-box p { margin-bottom: 0px; }
+.reseller-plan-box .reseller-plan-box-paragraph { margin-top: 18px; }
+.reseller-guarrantees-plan-box { padding: 40px 20px; }
+.reseller-guarrantees-section { padding: 70px 0px; }
+.reseller-table-section { padding: 70px 0px; }
+.reseller-comparison-text { margin-bottom: 70px; }
+.reseller-table-plan-box h2 { font-size: 32px; }
+.reseller-table-plan-box-btn { padding: 12px 30px; }
+.shared-banner-section { padding: 70px 0px 100px 0px; }
+.reseller-table-text { display: none; }
+#Comprison_pricingplan table tbody tr td { width: 50%; float: left; height: auto; }
+#Comprison_pricingplan .sep { width: 100%; float: left; height: auto; }
+.reseller-comparison-text { margin-bottom: 40px; }
+#Comprison_pricingplan table tbody tr:last-child td:nth-child(3), #Comprison_pricingplan table tbody tr:last-child td:nth-child(2),  #Comprison_pricingplan table tbody tr:last-child td:nth-child(4) { border-bottom-right-radius: 15px;}
+#Comprison_pricingplan button:focus { outline: none; }
+#Comprison_pricingplan td.default { border-right: none;}
+#Comprison_pricingplan table tbody tr td:nth-child(4) { border-left: 1px solid  #e8eaf1; }
+#Comprison_pricingplan table tbody tr:first-child td:nth-child(3) { border-bottom: 1px solid  #e8eaf1; border-top-right-radius: 15px;}
+#Comprison_pricingplan table thead tr th { border-bottom: none;}
+#Comprison_pricingplan table tbody tr:nth-child(2) td:first-child { border-top-left-radius: 15px !important;}
+#Comprison_pricingplan table tbody tr:first-child td:nth-child(2) { border-top-right-radius: 15px !important;}
+#Comprison_pricingplan table tbody tr:first-child td:nth-child(4) { border-left: none; border-top-right-radius: 15px !important;}
+#Comprison_pricingplan table tbody tr:first-child td:nth-child(3) { border-left: none; }
+.reliable-shared-hsoting-section-image { max-width: 250px; }
+.reliable-shared-hsoting-section { padding: 70px 0px; }
+.tab-box-section-inner { position: relative; top: -25px; }
+.shared-plan-box p {  margin-bottom: 0px; }
+.tabs-section .nav-tabs { margin: 0px auto 75px; }
+.tab-box-section { /*! padding-top: 70px; */ }
+.tabs-section .first-tab-btn, .tabs-section .tab-btn { box-shadow: none;}
+.tabs-section { margin-top: -115px; }
+.shared-plan-box .shared-plan-box-paragraph { margin-top: 18px;}
+.shared-plan-box { padding: 50px; }
+.account-box-section { padding: 70px 0px; }
+.guarrantees-section-variation-2 { background: var(--global--color-purple); padding: 70px 0px; }
+.guarrantees-section-variation-2 h1 { margin-bottom: 25px; }
+.guarrantees-section-variation-2 .guarrantee-text { margin-bottom: 50px; }
+.guarrantees-section-variation-2-text { margin-bottom: 50px; }
+.guarrantees-section-variation-2 p { padding: 0px; }
+.sliderbox { width: 100%; padding: 0px; margin-bottom: 30px; }
+.slider_content { width: 100%; box-shadow: none; padding: 0px;}
+.plan-wrap { padding: 60px; top: 0px; position: relative; }
+.slider-row1 label{ font-size:16px; }
+.slider-row1 .slide-value{ font-size:16px; }
+.account-section { padding: 70px 0px; }
+.landing-page-banner-section { padding: 70px 0px 0px 0px; }
+.landing-page-server-img { max-width: 463px; }
+.landing-page-column { padding: 145px 50px 92px 50px; }
+.landing-page-banner-logo-img { margin-bottom: 40px; }
+.landing-page-banner-logo-img img { width: 50%} 
+.landing-page-banner-section h1 { font-size: 32px; line-height: 30px; }
+.landing-page-banner-section p { font-size: 16px; line-height: 26px; }
+.landing-page-primary-btn, .landing-page-secondary-btn { font-size: 14px; }
+.landing-page-server-bottom-left-image, .landing-page-server-bottom-right-image { width: 35%; }
+.navbar-nav li.nav-item.dropdown:hover ul.dropdown-menu-list a { filter: none; opacity: 1; color: var(--global--color-white) !important; }
+.navbar-toggler span.navbar-toggler-icon { transition: all 0.15s; }
+.navbar-toggler.collapsed span:nth-child(1) { transform: rotate(0deg); }
+.navbar-toggler.collapsed span:nth-child(2) { opacity: 1; }
+.navbar-toggler.collapsed span:nth-child(3) { transform: rotate(0deg); }
+.navbar-toggler span:nth-child(1) { transform: rotate(45deg); transform-origin: 0% 200%; }
+.navbar-toggler span:nth-child(2) { opacity: 0; }
+.navbar-toggler span:nth-child(3) { transform: rotate(-45deg); transform-origin: 10% 20%; }
+.support-banner-section { padding: 70px 0px 265px 0px; }
+.support-banner-text h1 { font-size: 45px; }
+.support-plan-box-section-inner { position: relative; margin-top: -191px; padding-bottom: 70px;}
+.support-plan-box { padding: 40px; }
+.support-plan-box h4 { margin-bottom: 25px; font-size: 22px; }
+.support-plan-box p { font-size: 14px; }
+.support-plan-box h6 { font-size: 16px; }
+.support-plan-box p a { font-size: 14px; }
+.support-natix-host-section { padding: 70px 0px; }
+.support-natix-host-plan-box { padding: 30px; }
+.support-natix-host-plan-box-btn { padding: 13px 50px; }
+.features-section { padding: 383px 0px 150px 0px;}
+.feature-box { padding: 39px;}
+.feature-box br { display: none; }
+.datacenter-banner-section { padding: 70px 0px 265px 0px; }
+.datacenter-banner-text h1 { font-size: 45px; }
+.our-content-block { padding: 70px 0px; }
+.our-content-block h1 { margin-bottom: 50px; }
+.redundancy-section { padding: 70px 0px; }
+.redundancy-text { margin-bottom: 50px; }
+.redundancy-plan-box li i { margin-right: 10px; }
+.redundancy-plan-box h4 { margin-bottom: 35px; }
+.redundancy-plan-box li { font-size: 14px; margin-bottom: 10px; }
+.redundancy-section p { padding: 0 0%; margin-bottom: 15px; }
+.redundancy-plan-box li:last-child { margin-bottom: 0px; }
+.content-block-image-list { max-width: 33px; margin-right: 21px; margin-bottom: 14px;  max-height: 33px; }
+.content-block span { font-size: 13px; }
+.content-block-inner { padding-bottom: 70px; }
+.affiliate-banner-section { padding: 70px 0px 195px 0px; }
+.affiliate-banner-text h1 { font-size: 45px; }
+.affiliate-banner-text p { margin-bottom: 30px; }
+.affiliate-plan-box-section-inner { padding-bottom: 70px; }
+.affiliate-plan-box { padding: 60px 40px; }
+.affiliate-text h4 { line-height: 28px; }
+.affiliate-inner-plan-box { padding: 46px 30px; }
+.affiliate-program-plan-box { padding: 30px 20px; }
+.affiliate-program-plan-box .circle { font-size: 22px; line-height: 50px; height: 50px; width: 50px; margin: 0 auto 20px; }
+.affiliate-program-plan-box h4 { font-size: 21px; padding: 0; }
+.affiliate-program-plan-box-section { padding: 70px 0px; }
+.affiliate-program-text p { padding: 0 1%; }
+.affiliate-program-text { margin-bottom: 50px; }
+.premium-text-section { padding: 70px 0px; }
+.content-box-text h1 { font-size: 45px; }
+.ssl-certificate-plan-box-section-inner { margin-top: 0px; padding-bottom: 0px; }
+.ssl-certificate-plan-box-section { padding: 70px 0px;}
+.ssl-certificate-plan-box { padding: 50px;}
+.ssl-certificate-plan-box ul { width: 45%;}
+.ssl-certificate-plan-box .link-text { text-align: left;}
+.ssl-certificate-query-section { padding: 70px 0px; }
+.ssl-certificate-query-text { padding-top: 45px; text-align: center;}
+.choose-ssl-certificate-section ul { width: 100%; }
+.choose-ssl-certificate-section .our-datacenter-plan-box-inner { padding: 40px; }
+.ssl-certificate-outcome .redundancy-plan-box h4 { padding-left: 93px; padding-top: 26px; margin-bottom: 40px; font-size: 22px; }
+.ssl-certificate-outcome .redundancy-plan-box { padding: 34px; }
+.ssl-certificate-outcome-image-list {  max-width: 80px; }
+.banner_content_box { padding-top: 0px; }
+.blog-posts { padding: 70px 0px; }
+section#home-image-hosting-section { padding: 70px 0px 70px 0px; }
+#home-image-hosting-section .premium-section-inner { margin-top: 0;}
+.home-image-sub-section #banner_slider .carousel-item { min-height: 280px; }
+.home-image-sub-section #banner_slider .carousel-indicators { bottom: 0px; }
+.home-image-slider .text-paragraph p { padding: 8px 3% 0px 3%; }
+.home-image-slider .banner-text p { font-size: 18px; }
+.home-image-sub-section #banner_slider .carousel-inner { padding: 50px 0 70px 0; }
+.home-image-field-section p { margin-bottom: 20px; }
+.home-image-field-section { padding: 70px 0px; }
+#home-image-guarrantee-section .guarrantee-text { margin-bottom: 50px; }
+#home-image-feature-section .feature-plan-box { padding: 40px 30px; }
+#home-image-feature-section .feature-plan-box h3 { padding: 0 0%; }
+#home-image-footer-field { padding: 70px 0px; }
+#home-image-footer-field .footer-form { width: 85%; }
+#home-image-footer-section { padding: 70px 0px; }
+#home-image-footer-section .contact-plan-box-setting { margin-bottom: 70px; }
+#home-image-review-section { padding: 70px 0px; }
+.home-image-web-hosting-plan-box { padding: 7px 30px 30px 30px; }
+#home-image-review-section .ceo { margin-left: 45px; }
+.home-image-web-hosting-plan-box:after { top: 217px; }
+#home-image-review-section .review-section-text { font-size: 16px; line-height: 24px;}
+#home-image-review-section .quote i { font-size: 18px; }
+#home-image-review-section .quote { margin-bottom: 5px; }
+#home-image-hosting-section h4 { padding-left: 100px; margin-bottom: 60px !important; }
+#home-image-hosting-section .hosting-img-1, #home-image-hosting-section .hosting-img-2, #home-image-hosting-section .hosting-img-3 { position: absolute;}
+.home-gaming-sub-section #banner_slider .carousel-item { min-height: 180px; }
+.home-gaming-sub-section #banner_slider .carousel-indicators { bottom: 30px; }
+.home-gaming-sub-section #banner_slider .carousel-inner { padding: 20px 0 100px 0; }
+.home-gaming-sub-section .slider-2 p, .home-gaming-sub-section .slider-3 p { padding: 0 7%; margin-bottom: 25px; }
+.home-gaming-sub-section p { padding: 0 7%; margin-bottom: 25px; }
+#premium-plans-section .premium-section-inner { margin-top: 0px; }
+section#premium-plans-section { padding: 70px 0px 70px 0px; }
+#premium-plans-section .plan { padding: 30px 30px !important; }
+#home-gaming-vision-section { padding: 70px 0px; }
+.home-gaming-vision-text { margin-bottom: 50px; }
+#home-gaming-vision-section .vision-plan-box { padding: 40px 30px; }
+#home-feature-section .feature-plan-box { padding: 40px 30px; }
+    
+    #preview-img {
+
+  width:100%;
+
+}
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+ .account-form{  width: 65%;}
+ .affiliate-table-section tr { line-height: 1;}
+      .download-page-compare .btn__text i{
+        font-size: 50px;
+    }  
+#player_wrapper_outer .play_cover span.i-play{width:70px;height:50px;}
+#player_wrapper_outer .play_cover span.i-play:after{top:11px;left:22px;border-width:15px 0 15px 30px;}
+    
+.top-bar .right-arrow { font-size: 10px; }
+.top-bar small { font-size: 10px; }
+.top-bar span { font-size: 10px; }
+.social li:last-child { display: none;}
+.social-setting { font-size: 10px; }
+.social li a { font-size: 10px; }
+.navbar-brand img { max-width: 85%; } 
+.navbar-collapse { width: 50%; }
+.text-paragraph { width: 100%; }
+.banner-text { width: 100%; text-align: center; }
+.banner-text h1 { font-size: 35px; line-height: 40px; }
+.banner-btn { padding-top: 21px; text-align: center;}
+.text-paragraph p{ font-size: 14px; line-height: 20px; margin-bottom: 25px; padding: 8px 0 0 0; text-align: center;}
+.text-paragraph span { font-size: 14px; line-height: 20px; }
+.banner-text span { font-size: 15px; line-height: 22px; margin-bottom: 10px;}
+#banner_slider .carousel-inner { padding: 0px 0 60px 0; }
+#banner_slider .carousel-indicators { bottom: 0px; }
+#banner_slider .carousel-item { min-height: 0px; }
+.primary-btn { padding: 14px 35px; font-size: 12px;}
+.secondary-btn { padding: 14px 35px; font-size: 12px;  margin-left: 4px;}
+.banner-text p { font-size: 14px; line-height: 20px; margin-bottom: 7px; padding-bottom: 15px; }
+.search-btn { left: inherit; bottom: 0px; right: 0;}
+.slider-2 li, .slider-3 li { font-size: 14px; font-weight: 400; margin-bottom: 5px; }
+.field-background .field { padding: 33px 33px; top: 0px; position: relative; }
+.field-background { padding: 60px 0px 0px 0px; }
+.premium-section { padding: 60px 0px 60px 0px; }
+.price li { margin-right: 5px; font-size: 11px; }
+.banner-img, .slider-2 .banner-img, .slider-3 .banner-img { left: 17px; }
+.premium-section h1 { font-size: 30px; line-height: 40px; }
+.premium-section p { font-size: 14px; line-height: 18px; }
+.hosting-text, .server-text, .vps-text { left: 344px; }
+.plan h2 { font-size: 40px;}
+.plan ul { margin-right: 11%; width: 50%; }
+.hosting-btn, .server-btn, .vps-btn { padding: 12px 30px; }
+.plan li span { font-size: 16px; line-height: 20px; }
+.hosting-pricing span, .server-pricing span, .vps-pricing span { font-size: 30px; line-height: 20px; }
+.hosting-setting, .server-setting, .vps-setting { padding-top: 18px;}
+.shared-hosting li, .server-hosting li, .vps-hosting li { font-size: 16px; line-height: 20px; }
+.guarrantees-section h1 { font-size: 30px; font-weight: 400; line-height: 28px; }
+.guarrantees-section h4 { font-size: 16px; font-weight: 500; line-height: 25px; padding-bottom: 0px; }
+.guarrantees-section p { font-size: 14px; font-weight: 400; line-height: 25px; }
+.plan-box img { width: 45px;}
+.plan-box h4 { font-size: 18px; font-weight: 500; line-height: 22px; }
+.data-section h1 { font-size: 30px; }
+.map-container { padding: 10px 0px 35px 0px; }
+.data-section h4 { font-size: 17px; line-height: 26px; margin-bottom: 22px;}
+.data-section { padding: 50px 0; }
+.point { width: 1.0rem; height: 1.0rem; border: 2px solid var(--global--color-white); }
+.canada { top: 81px; left: 84px; }
+.los-angeles { top: 116px; left: 69px; }
+.dallas { top: 120px; left: 96px; }
+.atlanta { top: 105px; left: 118px; }
+.united-kingdom { top: 83px; left: 233px; }
+.germany { top: 91px; left: 255px; }
+.moscow { top: 86px; left: 296px; }
+.india { top: 130px; right: 140px; }
+.south-korea { top: 107px; right: 75px; }
+.japan { top: 100px; right: 56px; }
+.australia { top: 215px; right: 46px; }
+.plan-box-technology { padding-bottom: 30px;}
+.features-section { padding: 60px 0; }
+.feature-heading { padding-bottom: 20px; }
+.features-section h1 { font-size: 30px; margin-bottom: 15px; }
+.review-section { padding: 50px 0 0 0; }
+.review-section h1 { font-size: 26px; line-height: 30px; }
+.stars li { font-size: 22px; }
+.review-section-text { font-size: 20px; padding: 0; line-height: 26px;}
+.ceo h4 { font-size: 22px;  line-height: 10px ;}
+.quote i { padding-top: 3px; padding-bottom: 18px;}
+.contact-planbox {  padding: 20px 7px; }
+.contact-planbox img { padding-top: 0px;}
+.contact-image { max-width: 40px; }
+.contact-planbox h4 { font-size: 18px; line-height: 25px; }
+.contact-planbox p { font-size: 14px; line-height: 20px; }
+.newsletter { padding-top: 0px; }
+.footer-section { padding: 130px 0 60px 0; }
+.footer-section .form-control { padding: 24px; }
+.footer-section .form-group {  margin-bottom: 50px; }
+.subscribe-btn { padding: 14px 24px 15px 24px;}
+.footer-section .footer-hosting h4, .footer-section .footer-company h4, .footer-section .footer-contact h4 { font-size: 18px; }
+.footer-list li { height: 35px; width: 35px; line-height: 34px;  font-size: 13px; margin-right: 10px;}
+.footer-arrow-setting { height: 35px; width: 35px; line-height: 35px; margin-left: 0px; }
+.footer-cards-list li { font-size: 25px; }
+.footer-bar .footer-cards small { float: none;}
+.footer-cards-list li:first-child { margin-left: 10px;}
+.footer-arrow { padding-top: 0px; text-align: left;}
+.footer-arrow-setting { height: 30px; width: 30px; line-height: 30px !important; font-size: 16px; }
+.about-sub-section {  background-position: 70% 41px; }
+.about-us-banner-text h1 { font-size: 35px; line-height: 40px; }
+.about-primary-btn { padding: 14px 35px; }
+.about-secondary-btn { padding: 14px 23px; }
+.about-us-banner-section { padding: 20px 0px 50px 0px; }
+.about-us-banner-section h2 { font-size: 30px; line-height: 32px; }
+.about-us-price p { font-size: 13px; line-height: 18px; }
+.vision-section-inner { top: 0px;  text-align: center; position: relative; }
+.vision-image-list { margin: 0 auto 25px; }
+.history-border { display: none;}
+.vision-section { padding-top: 60px;}
+.history-section-text { margin-bottom: 50px; }
+.history-section .plan-circle:after { left: 130px; }
+.history-section h1 { font-size: 30px; line-height: 35px; }
+.history-section p { font-size: 14px; line-height: 20px; }
+.history-section .plan-circle:after { margin: 1% auto; left: 131px; }
+.history-section .plan-circle { height: 20px; width: 20px; margin: 4% auto; margin-bottom: 55px; }
+.history-section h4 { margin-bottom: 5px;}
+.history-section { padding: 60px 0px; margin-top: 0px;}
+.choose-section { padding: 60px 0px; }
+.choose-text { padding-top: 50px; }
+.choose-section h1 { font-size: 30px; line-height: 35px; margin-bottom: 15px; }
+.choose-section h5 { margin-bottom: 13px; font-size: 15px; line-height: 28px;}
+.choose-section p { line-height: 22px; font-size: 14px; }
+.team-plan-box { padding: 50px 80px; }
+.team-section { padding: 60px 0px; }
+.team-heading { margin-bottom: 30px; }
+.team-heading h1 { font-size: 30px; line-height: 30px; }
+.team-plan-box figure { width: 254px; height: 254px; margin: 0 auto 30px;}
+.contact-us-banner-section { padding: 20px 0px 50px 0px; }
+.contact-us-banner-section h1 { font-size: 35px; line-height: 35px; }
+.contact-us-banner-section p, .contact-us-banner-section span { font-size: 16px; margin-bottom: 0px;}
+.contact-us-plan-box { text-align: center;}
+.contact-us-plan-box h4 { font-size: 22px;}
+.contact-us-plan-box img { width: 30px ;}
+.contact-us-plan-box figure { margin: 0 auto 20px; }
+.contact-us-plan-box p { padding: 0 15%; }
+.contact-us-plan-box-section-inner { position: relative; top: 50px; }
+.success-section { padding: 60px 0 150px 0; }
+.success-section-text { margin-bottom: 40px; }
+.success-section h1 { font-size: 30px; line-height: 35px; }
+.account-info-section { padding: 130px 0px 70px 0px; }
+.account-info-form .form-control { font-size: 14px; padding: 0 0px 0 30px; }
+.account-info-section-plan-box { padding: 35px; }
+.account-info-section-plan-box h1 { font-size: 30px; line-height: 36px; }
+.account-info-section-text { margin-bottom: 40px; }
+.submitform-btn {  padding: 16px 40px; }
+.account-info-form .form-control { height: 50px; }
+.account-info-form .select-form { background-position: 96% 20px; }
+.account-info-form .textarea .form-control { height: 100px; }
+.account-info-section-plan-box p { padding: 0; }
+.content-box-section { padding: 20px 0px 50px 0px; }
+.content-box-section h1 { font-size: 35px; line-height: 35px; }  
+.content-box-section p { font-size: 16px; line-height: 18px; }
+.content-box-section ul li { font-size: 16px; line-height: 18px; }
+.premium-text-section h1 { font-size: 35px; line-height: 35px; }
+.premium-text-section p { font-size: 16px; line-height: 18px; }
+.premium-text-sectionul li { font-size: 16px; line-height: 18px; }    
+#upload-box  { padding: 10px 0px 0px 0px; }
+    
+.dedicated-server-plan-box h4 { margin-bottom: 20px; font-size: 20px; line-height: 18px; }
+.dedicated-server-plan-box h2 { font-size: 40px; line-height: 35px; }
+.dedicated-server-plan-box span { font-size: 28px; line-height: 35px; }
+.dedicated-server-plan-box .dedicated-server-pricing { font-size: 16px; line-height: 20px; }
+.dedicated-server-plan-box .dedicated-server-plan-box-text { font-size: 14px;  line-height: 22px; margin-bottom: 5px; }
+.dedicated-server-plan-box p { margin-bottom: 15px; }
+.dedicated-btn { padding: 12px 30px; font-size: 12px; }
+.dedicated-server-plan-box-section { padding-top: 60px; }
+.dedicated-server-plan-box { padding: 50px 30px; }
+.dedicated-server-plan-box li span { font-size: 14px; line-height: 20px; }
+.dedicated-server-plan-box ul { width: 43%; }
+.dedicated-server-maintainance h4 { padding: 0; font-size: 20px;  line-height: 30px;}
+.dedicated-server-maintainance a { padding: 0; font-size: 20px;  line-height: 30px;}
+.dedicated-server-maintainance { padding: 60px 0px; }
+.dedicated-hosting-plan-img img{ width: 70%}
+.dedicated-hosting-plan-section p { padding: 0; }
+.dedicated-hosting-plan-image { max-width: 350px; }
+.dedicated-hosting-plan-image-list { max-width: 50px; }
+.dedicated-hosting-plan-text h1,  .dedicated-hosting-plan-text span{ font-size: 30px; }
+.dedicated-hosting-plan-setting { padding-top: 35px; }
+.dedicated-hosting-plan-section h4 { line-height: 17px; font-size: 22px; }
+.dedicated-server-features-plan-box { padding: 80px 50px; }
+.dedicated-server-features-section { padding: 60px 0px; }
+.dedicated-server-features-section p { padding: 0 2%; }
+.dedicated-server-feature-image-list { max-width: 200px; margin: 0 auto 30px; }
+.dedicated-server-features-section h1 { font-size: 30px; line-height: 28px; }
+.dedicated-server-support-plan-box-section h1 { font-size: 30px; line-height: 32px; }
+.dedicated-server-support-plan-box-section { padding: 60px 0px; }
+.dedicated-server-support-plan-box { padding: 60px; }
+.accordion-section { padding: 60px 0px 0px 0px; }
+.accordion-section-text { margin-bottom: 30px; }
+.accordion-section h1 { font-size: 30px; line-height: 25px; }
+.accordion-card .btn-link { font-size: 19px; }
+.accordion-card .btn-link:before, .accordion-card .btn-link:before { font-size: 18px; line-height: 32px;}
+.accordion-card .card-header { padding: 13px 0px 15px 0px; }
+.accordion-card .card-body { padding: 0px 53px 13px 0px; font-size: 14px; color: var(--global--color-lightgrey); line-height: 22px; }
+.file-manager-box { padding: 20px 0px 50px 0px; }
+.file-manager-box h1 { font-size: 32px; line-height: 32px; }
+.file-manager-box p { font-size: 16px; } 
+.file-manager-box .form-control { height: 51px; padding-left: 20px; font-size: 14px;}
+.files-btn { padding: 16px 32px; }
+.domain-plan-box-section { padding-top: 60px; }
+.domain-management-section { padding: 60px 0px; }
+.domain-management-image-1, .domain-management-image-2 { max-width: 130px;}
+.download-table-box { padding: 60px 40px; }
+.domain-plan-box-image-list { max-width: 90px; height: 40px; }
+.download-table { padding: 60px 0px; }
+.table-plan-box { padding: 40px 30px; }
+.download-table .table tbody td .price { display: block;}
+.download-table .table tbody th { vertical-align: middle; padding: 0px;}
+.download-table .table thead th { font-size: 15px; }
+.reseller-banner-section { padding: 20px 0px 50px 0px; }
+.reseller-banner-section p { padding: 0px; font-size: 16px; }
+.reseller-banner-section h1 { font-size: 35px; line-height: 32px; }
+.reseller-plan-box p { margin-bottom: 15px; }
+.reseller-plan-box-section { padding-top: 60px; }
+.reseller-feature-text h1 { font-size: 30px; }
+.reseller-feature-text p { line-height: 20px; }
+.reseller-feature-section { padding: 60px 0px; }
+.reseller-feature-text { margin-bottom: 40px; }
+.reseller-feature-plan-box { padding: 45px 28px; }
+.reseller-feature-plan-box-image-list-variation-1, .reseller-feature-plan-box-image-list { max-width: 160px;}
+.reseller-feature-plan-box h4 { font-size: 22px; }
+.reseller-feature-plan-box p { font-size: 14px; line-height: 25px; }
+.reseller-guarrantees-plan-box { padding: 40px; }
+.reseller-guarrantees-section { padding: 60px 0px; }
+.reseller-guarrantees-text h1 { font-size: 30px; }
+.reseller-guarrantees-text p { font-size: 16px; line-height: 24px; padding: 0 11%; }
+.reseller-guarrantees-text { margin-bottom: 40px; }
+.reseller-guarrantees-plan-box-image-list { margin: 0 auto; }
+.reseller-table-section { padding: 60px 0px; }
+.reseller-comparison-text h1 { font-size: 30px; }
+.reseller-comparison-text p { line-height: 22px; }
+.reseller-comparison-text { margin-bottom: 60px; }
+.reseller-table-plan-box .table thead th { font-size: 18px; }
+.reseller-table-plan-box h2 { font-size: 24px; line-height: 30px; }
+.reseller-table-plan-box .reseller-table-plan-box-pricing-month { font-size: 16px; }
+.reseller-table-plan-box-btn { padding: 12px 35px; font-size: 12px; }
+.shared-banner-section h1 { font-size: 35px; line-height: 32px; }
+.shared-banner-section p { font-size: 16px; }
+.shared-plan-box h2 { font-size: 45px; font-weight: 700; line-height: 40px; }
+.shared-plan-box .shared-plan-box-pricing { font-size: 30px; line-height: 30px; }
+.shared-plan-box .shared-plan-box-pricing-month { font-size: 16px; line-height: 22px; }
+.first-tab-btn, .tab-btn { font-size: 14px; }
+#Comprison_pricingplan table tbody tr { border: none; }
+#Comprison_pricingplan table tbody tr td { font-size: 14px; }
+#Comprison_pricingplan table tbody tr td:first-child { font-size: 14px; }
+#Comprison_pricingplan button { font-size: 12px; }
+.reseller-comparison-text { margin-bottom: 40px; }
+#Comprison_pricingplan button { padding: 9px 50px; }
+.reliable-shared-hsoting-section h1 { font-size: 29px; line-height: 34px; }
+.reliable-shared-hsoting-section h5 { font-size: 16px; line-height: 22px; }
+.reliable-shared-hsoting-section p { font-size: 14px; }
+.reliable-shared-hsoting-section-btn { padding: 12px 38px; }
+.reliable-shared-hsoting-section-image { max-width: 225px; }
+.reliable-shared-hsoting-section { padding: 60px 0px; }
+.tabs-section .nav-tabs { margin: 0px auto 60px; }
+.shared-banner-section { padding: 20px 0px 100px 0px; }
+.tabs-section { margin-top: -100px; }
+.tab-box-section { /*! padding-top: 60px; */ }
+.shared-plan-box .shared-plan-box-paragraph { margin-top: 0px; }
+.shared-plan-box p { margin-bottom: 15px;}
+.features-section-variation-2 h1 { font-size: 30px;}
+.account-box-section h1 { font-size: 35px; line-height: 35px; }
+.account-box-section { padding: 20px 0px 50px 0px; }
+.account-box-section p { font-size: 16px; line-height: 22px; padding: 0 10%; }
+.account-image { max-width: 255px; }
+.guarrantees-section-variation-2 { padding: 60px 0px; }
+.guarrantees-section-variation-2 h1 { font-size: 30px; line-height: 27px; margin-bottom: 18px; }
+.guarrantees-section-variation-2 h5 { font-size: 16px; line-height: 22px; padding: 0 10%; }
+.guarrantees-section-variation-2 .guarrantee-text { margin-bottom: 40px; }
+.guarrantees-section-variation-2-text { margin-bottom: 40px; }
+.guarrantees-section-variation-2 p { font-size: 14px; padding: 0 2%; line-height: 26px; }
+.pricebox .pricetxt span.doller{ font-size:32px; }
+.pricebox .pricetxt span.numeric { font-size:32px; }
+.account-section .form-group { margin-bottom: 20px; }
+.account-section { padding: 60px 0px; }
+.landing-page-banner-section { padding: 60px 0px 0px 0px; }
+.landing-page-server-img { max-width: 350px; }
+.landing-page-column { padding: 130px 40px 70px 40px; }
+.landing-page-banner-logo-img img { width: 45%; }
+.landing-page-banner-section h1 { font-size: 28px; line-height: 28px; }
+.landing-page-banner-logo-img { margin-bottom: 30px;  }
+.landing-page-banner-section p { font-size: 14px; line-height: 24px; margin-bottom: 25px; padding: 0 3%; }
+.landing-page-primary-btn, .landing-page-secondary-btn { padding: 12px 25px; font-size: 13px;}
+.landing-page-server-bottom-left-image, .landing-page-server-bottom-right-image { width: 50%; }
+.support-banner-section { padding: 0px 0px 50px 0px; }
+.support-banner-text h1 { font-size: 33px; }
+.support-plan-box-section-inner { position: relative; margin-top: 0px; padding-bottom: 60px; }
+.support-plan-box-section { padding-top: 60px;}
+.support-plan-box h4 {  margin-bottom: 15px; font-size: 20px; }
+.support-plan-box h6 { margin-bottom: 0px; }
+.support-natix-host-section { padding: 60px 0px; }
+.support-natix-host-text h1 { font-size: 30px; }
+.support-natix-host-text p { padding: 0; }
+.support-natix-host-text { margin-bottom: 40px; }
+.support-natix-host-plan-box { padding: 30px; }
+.support-natix-host-plan-box-image-list { margin: 0 auto 25px; }
+.support-natix-host-plan-box h4 { font-size: 22px; margin-bottom: 15px; }
+.support-natix-host-plan-box p { margin-bottom: 20px; }
+.support-natix-host-plan-box-btn { padding: 12px 40px; }
+.support-natix-host-plan-box-image-list { max-height: 50px; }
+.features-section { padding: 60px 0px 145px 0px; }
+.feature-box { padding: 30px; }
+.feature-box h5 { font-size: 18px; }
+.datacenter-banner-section { padding: 20px 0px 50px 0px; }
+.datacenter-banner-text h1 { font-size: 35px; line-height: 35px;}
+.datacenter-banner-text p { font-size: 16px; }
+.our-content-block {  padding: 60px 0px; }
+.our-content-block h1 { margin-bottom: 30px; font-size: 30px;}
+.our-datacenter-plan-box-inner { padding: 30px; }
+.our-datacenter-plan-box-inner h4 { font-size: 20px; }
+.our-datacenter-plan-box-inner p { padding: 0; margin-bottom: 20px; }
+.our-datacenter-plan-box-inner-btn { padding: 14px 30px; }
+.redundancy-plan-box p { font-size: 14px; }
+.redundancy-section { padding: 60px 0px; }
+.redundancy-section h1 { font-size: 30px; margin-bottom: 15px; }
+.redundancy-text { margin-bottom: 30px; }
+.redundancy-plan-box { padding: 40px; }
+.content-block-inner { position: relative; margin-top: 0px; padding: 60px 0px;}
+.page-body .content-block-inner {
+  margin-top: -90px !important;
+}    
+    
+.file-upload-wrapper .modal-dialog {
+
+  max-width: 100% !important;
+
+}    
+
+.content-block h4 { font-size: 22px; }
+.content-block { padding: 40px 21px; }
+.content-block-image-list { max-width: 27px;  margin-right: 21px; margin-bottom: 10px;  max-height: 25px; }
+.content-block span { font-size: 11px; }
+.affiliate-banner-section { padding: 20px 0px 50px 0px; }
+.affiliate-banner-text h1 { font-size: 35px; line-height: 35px;}
+.affiliate-banner-text p { margin-bottom: 20px; }
+.affiliate-banner-text p { font-size: 16px; }
+.affiliate-banner-btn { padding: 12px 34px; }
+.affiliate-plan-box-section-inner { margin-top: 0px; padding: 60px 0px; }
+.affiliate-text h4 { font-size: 22px; margin-bottom: 15px; }
+.affiliate-text p { font-size: 14px; line-height: 22px; }
+.affiliate-text { margin-bottom: 30px; }
+.affiliate-inner-plan-box { padding: 30px; }
+.affiliate-inner-plan-box h4 { margin-bottom: 15px; font-size: 22px;}
+.affiliate-inner-plan-box p {  font-size: 14px; padding: 0; line-height: 16px; margin-bottom: 20px; }
+.affiliate-inner-plan-box .small-price { font-size: 30px; }
+.affiliate-inner-plan-box .large-price { font-size: 45px; line-height: 40px; }
+.affiliate-inner-plan-box .range, .affiliate-inner-plan-box .dollar, .affiliate-inner-plan-box .signup { font-size: 14px; }
+.affiliate-program-plan-box-section { padding: 60px 0px; }
+.affiliate-program-text h1 { font-size: 30px;  margin-bottom: 15px; }
+.affiliate-program-text p { padding: 0 0%; }
+.affiliate-program-text { margin-bottom: 30px; }
+.premium-text-section { padding: 20px 0px 50px 0px; }
+.content-box-text h1 { font-size: 35px; line-height: 35px; }
+.content-box-text p { font-size: 16px; }
+.ssl-certificate-plan-box-section { padding: 60px 0px; }
+.ssl-certificate-plan-box { padding: 50px 30px; }
+.ssl-certificate-plan-box h4 { font-size: 20px;  margin-bottom: 20px;}
+.ssl-certificate-plan-box h2 { font-size: 40px; line-height: 35px; }
+.ssl-certificate-plan-box span { font-size: 28px; line-height: 35px; }
+.ssl-certificate-plan-box .ssl-certificate-pricing { font-size: 16px; line-height: 20px; }
+.ssl-certificate-plan-box p { margin-bottom: 15px;}
+.ssl-certificate-btn { padding: 12px 30px; font-size: 12px; }
+.ssl-certificate-plan-box li span { font-size: 14px; line-height: 20px; }
+.ssl-certificate-plan-box li { padding: 8px 0px 6px 0px; }
+.ssl-certificate-plan-box .link-text { padding-top: 30px; }
+.ssl-certificate-query-section h1 { font-size: 30px; margin-bottom: 20px; }
+.ssl-certificate-query-section p { font-size: 14px; line-height: 22px; }
+.ssl-certificate-query-section { padding: 60px 0px; }
+.choose-ssl-certificate-section li { font-size: 16px; padding: 8px 0px 5px 0px; }
+.ssl-certificate-outcome-image-list { position: relative; }
+.ssl-certificate-outcome .redundancy-plan-box h4 { padding-left: 0px;  padding-top: 0px;  margin-bottom: 10px; font-size: 22px; }
+.ssl-certificate-outcome .redundancy-plan-box { padding: 40px; }
+.choose-ssl-certificate-section .validation { margin-bottom: 20px; }
+.blog-posts { padding: 60px 0px; }
+.blog_banner { padding: 60px 24px; }
+.breadcrumb { margin-bottom: 0px; padding-bottom: 0px; padding-top: 0px;}
+.blog_banner .banner_content_box h1 { font-size: 30px; line-height: 40px; }
+.home-image-sub-section #banner_slider .carousel-item { min-height: 260px; }
+.home-image-slider .text-paragraph p { padding: 8px 0% 0px 0%; font-size: 16px; }
+.home-image-slider .banner-text p { padding-bottom: 0px; font-size: 16px; }
+.home-image-slider .text-paragraph span { font-size: 16px; }
+.home-image-slider .slider-2 p, .home-image-slider .slider-3 p { margin-bottom: 7px; }
+.home-image-sub-section #banner_slider .carousel-item { min-height: 225px; }
+.home-image-slider .text-paragraph p { margin-bottom: 25px;}
+.home-image-sub-section #banner_slider .carousel-inner { padding: 20px 0 60px 0; }
+.home-image-field-section h1 { font-size: 30px; line-height: 28px; margin-bottom: 10px; }
+.home-image-field-section .field-background { padding: 0px; }
+.home-image-field-section p { font-size: 16px; }
+.home-image-field-section ul { padding-left: 4% !important; }
+.home-image-field-section .account-form {  width: 95%; }
+.home-image-field-section .price li { font-size: 12px; }
+.home-image-field-section { padding: 60px 0px; }
+section#home-image-hosting-section { padding: 60px 0px; }
+#home-image-hosting-section .hosting-btn, #home-image-hosting-section .server-btn, #home-image-hosting-section .vps-btn { padding: 12px 30px; }
+#home-image-guarrantee-section h4 { padding: 0 10%; }
+#home-image-guarrantee-section .guarrantee-text { margin-bottom: 40px; }
+#home-image-footer-field { padding: 60px 0px; }
+#home-image-footer-field p { margin-bottom: 15px; }
+#home-image-footer-field .footer-form { width: 100%; }
+#home-image-footer-bar .footer-cards-list li:first-child { margin-left: 0px; }
+#home-image-footer-bar .footer-cards-list li a:first-child { padding-left: 0px ;}
+#home-image-footer-section { padding: 60px 0px; }
+#home-image-footer-section .contact-plan-box-setting { margin-bottom: 60px; }
+#home-image-review-section { padding: 60px 0px; }
+#home-image-review-section ul { margin-bottom: 40px; }
+.home-image-web-hosting-plan-box:after { top: 169px; }
+#home-image-review-section .ceo { margin-left: 50px; }
+#home-image-review-section figure { margin-bottom: 0px; }
+.home-gaming-sub-section #banner_slider .carousel-indicators { bottom: 0px; }
+.home-gaming-sub-section #banner_slider .carousel-inner { padding: 20px 0 60px 0; }
+section#premium-plans-section { padding: 60px 0px; }
+#premium-plans-section figure { margin: 0 auto 44px; max-height: 40px; }
+#premium-plans-section .plan p { margin-bottom: 15px; font-size: 15px; }
+#premium-plans-section .plan h4 { font-size: 22px; }
+#premium-plans-section .dedicated-btn { padding: 12px 30px; }
+#home-gaming-vision-section { padding: 60px 0px; }
+#home-gaming-vision-section h1 { font-size: 30px; line-height: 32px; }
+.home-gaming-vision-text p { font-size: 16px; line-height: 24px; padding: 0 10%; }
+.home-gaming-vision-text { margin-bottom: 40px; }
+.home-vision-image-list { max-width: 50px; margin: 0 auto 25px; max-height: 50px; }
+}
+  
+  
+  
+@media screen and (max-width: 576px) {
+       .account-form{ 
+
+        width: 60% ;
+    }
+    .download-page-compare .btn__text i{
+        font-size: 35px;
+    }    
+    
+        .download-page-compare .btn__text {
+       font-size: 11px;
+    }  
+.tabs-section .tab-btn {padding: 8px 20px;}
+
+.topbar-setting { text-align: center; }
+.social { text-align: center; width: 100%; }
+.navbar { padding-top:0px; padding-bottom: 0px; } 
+.navbar-brand img { max-width: 85%; } 
+.banner-text h1 { font-size: 29px; line-height: 35px; }
+.banner-text span { font-size: 14px; line-height: 20px; } 
+.banner-img { left: 0; width: 100%; }
+.slider-2 .banner-img, .slider-3 .banner-img { left: 13px; width: 100%; }
+.slider-2 ul, .slider-3 ul { margin-bottom: 25px; }
+.banner-text .text-paragraph { font-size: 14px; line-height: 20px; margin-bottom: 5px; }  
+#banner_slider .carousel-inner { padding: 0px 0 60px 0; }
+.slider-2 li, .slider-3 li { font-size: 12px; }
+.primary-btn { padding: 12px 25px; }
+.secondary-btn { padding: 12px 25px; }
+.search-btn { left: inherit; right: 0; bottom: 0; padding: 9px 16px; font-size: 10px;}
+.account-form .form-control { padding: 15px 0px 15px 10px; font-size: 12px; }
+.plan .hosting-img-1, .plan .hosting-img-2, .plan .hosting-img-3 { margin-bottom: 20px; }
+.plan h4 { font-size: 18px; }
+.plan li { padding: 8px 0; }
+.plan li span { font-size: 14px; line-height: 20px; }
+.hosting-list-icon { max-width: 20px; }
+.price { padding-top: 0px; }
+.price li { margin-right: 0px; font-size: 11px; text-align: center; padding: 0px 5px 0px 5px; display: table-cell; vertical-align: middle;}
+.plan ul { margin-right: 0%; width: 100%; display: table; margin-bottom: 20px; }
+.plan small { line-height: 0px; }
+.plan h2 { line-height: 40px; margin-bottom: 20px; }
+.premium-section { padding: 50px 0px 60px 0px; }
+.field-background { padding: 50px 0px 0px 0px; }
+.hosting-text, .server-text, .vps-text { left: 60%; font-size: 12px; }
+.hosting-pricing span, .server-pricing span, .vps-pricing span { font-size: 25px; line-height: 20px; }
+.hosting-pricing small, .server-pricing small, .vps-pricing small { font-size: 14px;}
+.shared-hosting img, .server-hosting img, .vps-hosting img { padding-right: 10px; }
+.hosting-btn, .server-btn, .vps-btn { margin-left: 0%; padding: 14px 36px; font-size: 12px; }
+.premium-section h1 { font-size: 26px; line-height: 35px; }
+.hosting-img-1 img, .hosting-img-2 img, .hosting-img-3 img { width: 50px; float: none;}
+.plan figure { margin-bottom: 15px; }
+.shared-hosting, .server-hosting, .vps-hosting { width: 100%; }
+.plan-box-guarrantee, .plan-box-backup { margin-bottom: 30px; }
+.plan-box h4 br{ display: none;}
+.guarrantees-section h1 { font-size: 26px; line-height: 26px; }
+.guarrantees-section h4 { font-size: 14px;  line-height: 22px; }
+.guarrantees-section p { font-size: 12px; line-height: 20px; }
+.guarrantees-btn { padding: 14px 36px 14px 36px; font-size: 12px; }
+.plan-box-setting { padding-top: 40px; }
+.data-section { padding: 60px 0px; }
+.data-section h1 { font-size: 26px; line-height: 26px; margin-bottom: 15px; }
+.data-section p { font-size: 14px; font-weight: 400; line-height: 20px; padding: 0 5%;}
+.data-section h4 { font-size: 16px; line-height: 22px; }
+.data-btn { font-size: 12px; padding: 12px 24px; }
+.point { width: 0.8rem; height: 0.8rem; border: 2px solid var(--global--color-white); }
+.canada { top: 33%; left: 17%; }
+.los-angeles { top: 45%; left: 13%; }
+.dallas { top: 45%; left: 19%; }
+.atlanta { top: 37%; left: 22%; }
+.united-kingdom { top: 32%; left: 46%; }
+.germany { top: 36%; left: 50%; }
+.moscow { top: 33%; left: 58%; }
+.india { top: 49%; right: 26%; }
+.south-korea { top: 42%; right: 14%; }
+.japan { top: 39%; right: 10%; }
+.australia { top: 81%; right: 8%; }
+.features-section { padding: 60px 0; }
+.features-section h1 { font-size: 26px; line-height: 26px;  margin-bottom: 10px; }
+.features-section p { font-size: 15px; line-height: 20px; }
+.feature-plan-box { padding: 40px 30px; }
+.feature-image-list { max-width: 150px; margin: 0 auto 25px; }
+.feature-plan-box h3 { font-size: 20px; line-height: 25px; }
+.feature-plan-box p { font-size: 14px; line-height: 20px; }
+.review-section { padding: 60px 0px; }
+.review-section h1 { font-size: 26px; line-height: 26px; }
+.review-section p { margin-bottom: 20px; }
+.review-section .heading-text { font-size: 14px; line-height: 20px; margin-bottom: 5px; padding: 0 6%; }
+.stars li { font-size: 20px; padding-top: 10px; }
+.quote i { font-size: 20px; padding-top: 0px; padding-bottom: 15px; }
+.review-section-text { font-size: 18px;  line-height: 25px; }
+.ceo h4 { font-size: 20px; padding-top: 8px; line-height: 10px; }
+.ceo .ceo-text{ font-size: 12px; line-height: 18px; }
+.contact-planbox { margin-bottom: 20px;}
+.contact-planbox p { line-height: 14px; }
+.contact-section { padding-bottom: 40px; }
+.account-info-form .textarea .form-control { height: 50px; }
+.contact-section { bottom: 0px; }
+.footer-section { padding: 60px 0px; }
+.footer-section h3 { font-size: 22px; line-height: 18px; }
+.footer-section p { font-size: 13px; line-height: 20px; }
+.footer-form { padding-top: 5px; }
+.footer-section .form-control { padding: 20px; font-size: 14px;}
+.footer-section .form-group { margin-bottom: 40px; }
+.footer-section p { margin-bottom: 25px; }
+.footer-logo figure {  margin: 0 auto 20px; }
+.footer-list { margin-bottom: 0px;}
+.footer-list li a { height: 35px; width: 35px; line-height: 34px; }
+.subscribe-btn { padding: 12px 20px 12px 20px; font-size: 12px; }
+.footer-company-setting, .footer-hosting-setting, .footer-contact-setting { display: none; }
+.footer-logo-setting { padding-top: 0px;  text-align: center;}
+.footer-setting { padding-top: 25px; padding-bottom: 10px; }
+.footer-cards { text-align: center;}
+.footer-bar .footer-cards small { margin: 0px; }
+.footer-cards-list li:first-child { margin-left: 0px; }
+.footer-cards-list { padding-top: 10px;}
+.footer-arrow { text-align: center;}
+.footer-arrow-setting { height: 25px; width: 25px; line-height: 23px !important; font-size: 15px; }
+.footer-list li { height: 25px; width: 25px; line-height: 24px; margin-right: 20px; }
+.footer-logo small { font-size: 12px; }
+.footer-bar { padding: 30px 0 30px 0; }
+.footer-cards-list li { font-size: 20px; }
+.vision-plan-box { padding: 20px; }
+.vision-plan-box h4 { font-size: 20px; line-height: 25px; margin-bottom: 10px; }
+.vision-plan-box p { font-size: 14px; line-height: 22px; }
+.vision-image-list { margin: 0 auto 20px; max-width: 50px; }
+.about-us-banner-section { padding: 0px 0px 50px 0px; }
+.about-us-banner-section h2 { padding-bottom: 0px; padding-top: 20px; font-size: 28px; line-height: 30px;}
+.about-us-banner-text p { font-size: 14px; line-height: 20px; }
+.about-us-banner-text h1 { font-size: 32px; line-height: 35px; }
+.about-primary-btn { padding: 12px 26px; font-size: 12px;}
+.about-secondary-btn { padding: 12px 16px; font-size: 12px; margin-left: 4px;}
+.about-us-price { padding-top: 25px; }
+.about-sub-section {  background-position: 70% 65px; }
+.history-section .plan-circle:after { left: 49%; }
+.history-section h1 { font-size: 26px; line-height: 26px; }
+.history-section p { padding: 0 3%; }
+.history-section { padding: 60px 0px; }
+.choose-section h1 { font-size: 26px; line-height: 26px; margin-bottom: 13px; }
+.choose-section h5 { margin-bottom: 10px; font-size: 14px; line-height: 22px; }
+.choose-section p { line-height: 20px; font-size: 12px; }
+.choose-btn { padding: 12px 35px; font-size: 14px; }
+.choose-section { padding: 50px 0px; }
+.choose-text { padding-top: 30px; }
+.team-section { padding: 50px 0px; }
+.team-heading h1 { font-size: 26px; line-height: 26px; }
+.team-heading p { font-size: 14px; line-height: 14px; padding: 0 3%;}
+.team-plan-box { padding: 30px; }
+.team-plan-box figure { width: 150px; height: 150px; margin: 0 auto 30px; }
+.team-plan-box img { padding-top: 10px; }
+.team-plan-box h4 { font-size: 20px; line-height: 18px; }
+.team-plan-box p { margin-bottom: 15px; }
+.contact-us-banner-section h1 { font-size: 30px; line-height: 30px; }
+.contact-us-banner-section p, .contact-us-banner-section span { font-size: 14px; margin-bottom: 0px;}
+.contact-us-plan-box { padding: 30px; }
+.contact-us-plan-box figure { margin: 0 auto 20px; }
+.contact-us-banner-section { padding: 0px 0px 50px 0px; }
+.contact-us-plan-box img {  width: 25px; }
+.contact-us-plan-box h4 { font-size: 18px; line-height: 24px; margin-bottom: 10px; }
+.contact-us-plan-box p { font-size: 14px; line-height: 20px; padding: 0;}
+.contact-us-plan-box a { font-size: 14px; line-height: 20px;}
+.success-section h1 { font-size: 26px; line-height: 23px; }
+.success-section p { font-size: 14px; line-height: 18px; }
+.success-plan-box a { font-size: 14px; line-height: 18px; }
+.success-section-text { margin-bottom: 30px; }
+.success-plan-box { padding: 30px; }
+.success-plan-box h4 { margin-bottom: 10px; }
+.success-image-list { max-width: 40px; }
+.success-plan-box figure { margin-bottom: 10px; }
+.success-plan-box h4 { font-size: 20px; line-height: 24px; }
+.account-info-section { padding: 100px 0px 60px 0px; }
+.account-info-section-plan-box h1 { font-size: 26px; line-height: 32px; }
+.account-info-section-plan-box p { font-size: 14px; line-height: 18px; }
+.account-info-section-text { margin-bottom: 20px; }
+.account-info-form .form-control { font-size: 12px; padding: 0 0px 0 10px; height: 45px; }
+.account-info-section-plan-box { padding: 20px; }
+.account-info-form .select-form { background-position: 96% 19px; }
+.submitform-btn { padding: 12px 30px; font-size: 12px; } 
+.success-section { padding: 60px 0 55px 0; }
+.contact-section-inner { position: relative; }
+.content-box-section { padding: 0px 0px 50px 0px; }
+.content-box-section ul { margin-bottom: 0px;}
+.content-box-section h1 { font-size: 30px; line-height: 30px; }
+.content-box-section p { font-size: 14px; }
+.content-box-section ul li { font-size: 12px; line-height: 16px; }
+.premium-text-section h1 { font-size: 30px; line-height: 30px; }
+.premium-text-section p { font-size: 14px; }    
+.premium-text-section ul li { font-size: 12px; line-height: 16px; }
+    
+.dedicated-server-plan-box ul { width: 100%; }
+.dedicated-server-plan-box { padding: 40px; }
+.dedicated-server-plan-box h4 { margin-bottom: 20px; font-size: 20px; line-height: 16px; }
+.dedicated-server-plan-box h2 { font-size: 40px; line-height: 40px; }
+.dedicated-server-plan-box span { font-size: 24px; line-height: 30px; }
+.dedicated-server-plan-box .dedicated-server-pricing { font-size: 14px; line-height: 18px; }
+.dedicated-server-plan-box .dedicated-server-plan-box-text { font-size: 12px;  line-height: 18px; margin-bottom: 5px; }
+.dedicated-btn { padding: 12px 26px; font-size: 12px; }
+.dedicated-server-plan-box p { font-size: 14px; margin-bottom: 18px; }
+.dedicated-server-plan-box .dedicated-server-plan-box-paragraph { font-size: 12px; line-height: 18px; }
+.dedicated-server-maintainance { padding: 50px 0px; }
+.dedicated-server-maintainance h4,  .dedicated-server-maintainance a { font-size: 20px; line-height: 24px; }
+.dedicated-hosting-plan-text h1, .dedicated-hosting-plan-text span { font-size: 26px; }
+.dedicated-hosting-plan-section h4 { line-height: 15px; font-size: 20px; }
+.dedicated-hosting-plan-section p { font-size: 12px; line-height: 16px; }
+.dedicated-hosting-plan-image-list { max-width: 40px; }
+.dedicated-hosting-plan-image { max-width: 250px; }
+.dedicated-list-icon { max-width: 20px; }
+.dedicated-hosting-plan-section { padding: 60px 0px; }
+.dedicated-server-features-plan-box { padding: 50px 30px; }
+.dedicated-server-features-section h1 { font-size: 26px; line-height: 26px; }
+.dedicated-server-features-section p { font-size: 14px; line-height: 18px; }
+.dedicated-server-features-plan-box p { font-size: 14px; line-height: 25px; padding: 0px;}
+.dedicated-server-features-section-text { margin-bottom: 30px; }
+.dedicated-server-feature-network-img, .dedicated-server-feature-technology-img, .dedicated-server-feature-control-panel-img { margin-bottom: 30px; }
+.dedicated-server-feature-image-list { max-width: 160px; margin: 0 auto 25px; }
+.dedicated-server-features-plan-box h4 { line-height: 23px; font-size: 20px; }
+.dedicated-server-support-plan-box-section h1 { font-size: 26px; line-height: 30px; }
+.dedicated-server-support-plan-box p { margin-bottom: 10px; font-size: 16px; }
+.dedicated-server-support-plan-box li { padding: 8px 0px; }
+.dedicated-server-support-plan-box img { width: 75px; }
+.dedicated-server-support-plan-box { padding: 30px; }
+.dedicated-server-support-plan-box li:last-child { padding-bottom: 0px; }
+.dedicated-support-btn { padding: 12px 30px; font-size: 12px;}
+.dedicated-server-support-plan-box .variation-2 { padding: 12px 24px; }
+.dedicated-server-support-plan-box span { font-size: 14px; line-height: 18px;}
+.dedicated-server-support-image-list { max-width: 62px; }
+.dedicated-server-support-plan-box h4 { line-height: 26px; font-size: 20px;}
+.dedicated-server-support-plan-box-section-text { margin-bottom: 30px; }
+.dedicated-server-support-plan-box-section p { font-size: 14px; line-height: 22px; }
+.accordion-section h1 { font-size: 26px; line-height: 25px; }
+.accordion-section-text { margin-bottom: 15px; }
+.accordion-card .btn-link { font-size: 16px; }
+.accordion-card .btn-link:before, .accordion-card .btn-link:before { font-size: 16px; line-height: 24px; }
+.accordion-card .card-body { font-size: 12px; line-height: 20px; }
+.accordion-section { padding: 60px 0px; }
+.file-manager-box { padding: 0px 0px 50px 0px; }
+.file-manager-box h1 { font-size: 26px; line-height: 30px; }
+.file-manager-box p { font-size: 14px; line-height: 18px; }
+.files-btn { padding: 12px 26px; font-size: 12px; }
+.files-form { width: 69%; }
+    
+.file-manager-box .form-control { height: 40px; padding-left: 50px; font-size: 12px; }
+.domain-plan-box p { margin-bottom: 20px; font-size: 14px; line-height: 20px;}
+.domain-plan-box h2 { font-size: 40px; line-height: 40px;}
+.domain-plan-box span { font-size: 25px; line-height: 40px;}
+.domain-plan-box-image-list { max-width: 80px; height: 30px; }
+.domain-plan-box .domain-plan-box-pricing { font-size: 14px; }
+.domain-plan-box { padding: 30px; }
+.domain-plan-box-btn { padding: 12px 30px; font-size: 12px; }
+.domain-management-section { padding: 60px 0px; }
+.download-table-box { padding: 40px 30px; }
+.domain-management-image-1, .domain-management-image-2 { max-width: 100px;}
+.download-table-box h4 { font-size: 22px }
+.download-table-box p { font-size: 14px; line-height: 24px; }
+.download-table .table thead th { font-size: 10px; }
+.table-plan-box { padding: 30px 20px; }
+.download-table .table tbody th { font-size: 10px; }
+.download-table .table tbody th .popular, .download-table .table tbody th .sale { font-size: 7px; }
+.download-table .table tbody td, .download-table .table tbody td .price { font-size: 10px; }
+.reseller-banner-section { padding: 0px 0px 50px 0px; }
+.reseller-banner-section h1 { font-size: 26px; line-height: 35px; }
+.reseller-banner-section p { font-size: 14px; line-height: 24px; }
+.reseller-plan-box { padding: 40px 30px; }
+.reseller-plan-box-image-list {  max-width: 50px; }
+.reseller-plan-box figure { margin-bottom: 20px; }
+.reseller-plan-box h4 { font-size: 20px; }
+.reseller-plan-box p { font-size: 14px; line-height: 20px; }
+.reseller-plan-box h2 { font-size: 40px; line-height: 40px;}
+.reseller-plan-box .reseller-plan-box-pricing { font-size: 25px; }
+.reseller-plan-box .reseller-plan-box-pricing-month { font-size: 14px; }
+.reseller-feature-plan-box-image-list-variation-1, .reseller-feature-plan-box-image-list { max-width: 140px; }
+.reseller-plan-box-btn { padding: 12px 40px; font-size: 12px; }
+.reseller-feature-text h1 { font-size: 26px; }
+.reseller-feature-text p { line-height: 18px; font-size: 14px; }
+.reseller-feature-text { margin-bottom: 30px; }
+.reseller-feature-plan-box h4 { font-size: 20px; }
+.reseller-feature-plan-box p { font-size: 12px; line-height: 22px; }
+.reseller-feature-plan-box { padding: 45px 25px; }
+.reseller-guarrantees-text h1 { font-size: 26px; }
+.reseller-guarrantees-text p { font-size: 14px; line-height: 22px; padding: 0; }
+.reseller-guarrantees-plan-box p { font-size: 14px; line-height: 22px; }
+.reseller-guarrantees-plan-box { padding: 40px 20px; }
+.reseller-guarrantees-text { margin-bottom: 30px; }
+.reseller-guarrantees-plan-box-image-list { max-width: 50px; margin-bottom: 15px; height: 60px;}
+.shared-banner-section { padding: 0px 0px 100px 0px; }
+.shared-banner-section p { font-size: 14px; line-height: 20px; }
+.shared-banner-section h1 { font-size: 30px; line-height: 32px; }
+
+.tabs-section .nav-tabs { margin: 0px auto 45px; }
+.reseller-comparison-text h1 { font-size: 25px; }
+.reseller-comparison-text p { font-size: 14px; line-height: 20px; }
+.reseller-comparison-text { margin-bottom: 30px; }
+#Comprison_pricingplan button { padding: 7px 20px; }
+#Comprison_pricingplan table tbody tr td:first-child { padding-left: 20px; }
+#Comprison_pricingplan table tbody tr td { padding: 12px 0px; }
+#Comprison_pricingplan table tbody tr:first-child td { padding-top: 20px; }
+#Comprison_pricingplan table tbody tr:last-child td { padding-bottom: 20px; }
+#Comprison_pricingplan table tbody tr td { font-size: 12px; }
+#Comprison_pricingplan table tbody tr td:first-child { font-size: 12px; }
+.reseller-table-plan-box-btn { padding: 12px 25px; }
+#Comprison_pricingplan table tbody tr:nth-child(2) td { padding-top: 20px; }
+.reliable-shared-hsoting-section h1 { font-size: 26px; line-height: 30px; margin-bottom: 10px;}
+.reliable-shared-hsoting-section h5 { font-size: 14px; line-height: 22px; margin-bottom: 10px; }
+.reliable-shared-hsoting-section p { font-size: 12px; line-height: 20px; }
+.reliable-shared-hsoting-section-btn { font-size: 12px; padding: 14px 36px; }
+.reliable-shared-hsoting-section-text { padding-top: 20px; }
+.shared-plan-box figure { margin-bottom: 20px; }
+.shared-plan-box h4 { font-size: 20px; }
+.shared-plan-box p { font-size: 14px; line-height: 20px; }
+.shared-plan-box h2 { font-size: 40px; line-height: 40px;}
+.shared-plan-box .shared-plan-box-pricing { font-size: 25px; line-height: 20px;}
+.shared-plan-box .shared-plan-box-pricing-month { font-size: 14px; }
+.box-btn { padding: 12px 36px; font-size: 12px; }
+.shared-plan-box { padding: 30px; }
+.reliable-shared-hsoting-section-image { max-width: 175px; }
+.features-section-variation-2 h1 { font-size: 26px;}
+.feature-heading { padding-bottom: 20px; }
+.account-box-section { padding: 0px 0px 50px 0px; }
+.account-box-section h1 { font-size: 30px; line-height: 32px; }
+.vps-slider-image-list { max-width: 22px; }
+.account-image { max-width: 155px; }
+.account-box-section p { font-size: 14px; line-height: 22px; padding: 0px; }
+.reseller-feature-section-2 { margin-top: 0px; padding: 0px 0px 60px 0px; }
+.guarrantees-section-variation-2 h1 { font-size: 26px;  margin-bottom: 15px; }
+.guarrantees-section-variation-2 h5 { font-size: 14px; line-height: 20px; padding: 0px; }
+.guarrantees-section-variation-2 .guarrantee-text { margin-bottom: 30px; }
+.guarrantees-section-variation-2-text { margin-bottom: 30px; }
+.guarrantees-section-variation-2 p { font-size: 14px; padding: 0px; line-height: 22px; }
+.plan-box h4 { font-size: 14px; line-height: 22px; }
+.account-section h4 { font-size: 22px;}
+.plan-wrap { padding: 50px 30px 50px 30px; }
+.account-section p { line-height: 16px; font-size: 14px; margin-bottom: 27px; }
+.account-section .form-control { font-size: 14px; }
+.white_btn a { padding: 12px 30px;  font-size: 12px; }
+.slider-container .ui-slider-handle { width: 25px; height: 25px; margin-top: -3px;}
+.landing-page-server-img { max-width: 300px; }
+.landing-page-banner-logo-img img { width: 60%; }
+.landing-page-column { padding: 120px 30px 60px 30px; }
+.landing-page-banner-section h1 { font-size: 25px; line-height: 25px; }
+.landing-page-primary-btn { padding: 12px 18px; font-size: 10px; }
+.landing-page-secondary-btn { padding: 12px 15px; font-size: 10px; }
+.landing-page-server-bottom-left-image { left: -70px; width: 60%; }
+.landing-page-server-bottom-right-image { right: -70px; width: 60%; }
+.landing-page-banner-section p { padding: 0;}
+.support-banner-section { padding: 0px 0px 50px 0px; }
+.support-banner-text h1 { font-size: 26px; line-height: 30px; }
+.support-banner-text p { font-size: 16px; line-height: 20px; }
+.support-natix-host-text h1 { font-size: 26px; }
+.support-natix-host-text h1 { margin-bottom: 15px; }
+.support-natix-host-text p { font-size: 14px; line-height: 22px; }
+.support-natix-host-text { margin-bottom: 30px; }
+.support-natix-host-plan-box-image-list { margin: 0 auto 20px; max-width: 50px; }
+.support-natix-host-plan-box h4 { font-size: 20px; margin-bottom: 15px; }
+.support-natix-host-plan-box p { margin-bottom: 15px; font-size: 14px; }
+.support-natix-host-plan-box-btn { padding: 13px 40px; font-size: 12px; }
+.feature-box-image-list { margin: 0 auto 20px; max-width: 40px; max-height: 40px; }
+.features-section { padding: 60px 0px ; }
+.support-plan-box { padding: 28px; }
+.support-plan-box h4 { font-size: 18px; }
+.datacenter-banner-section { padding: 0px 0px 50px 0px; }
+.datacenter-banner-text h1 { font-size: 30px; line-height: 32px; }
+.datacenter-banner-text p { font-size: 14px; line-height: 18px; }
+.our-content-block h1 { font-size: 26px; }
+.our-content-block { padding: 50px 0px; }
+.our-datacenter-plan-box-inner p { margin-bottom: 15px; font-size: 14px; line-height: 20px; }
+.our-datacenter-plan-box-inner-mail-btn { margin-bottom: 15px; }
+.our-datacenter-plan-box-inner-btn { padding: 12px 30px; font-size: 12px; }
+.redundancy-section h1 { font-size: 26px; }
+.redundancy-section p { font-size: 14px; line-height: 22px; margin-bottom: 10px;}
+.redundancy-plan-box { padding: 30px 22px; }
+.redundancy-image-list { max-width: 50px; }
+.redundancy-image-list img { max-height: 50px; }
+.redundancy-plan-box h4 { margin-bottom: 25px; }
+.redundancy-plan-box h4 { padding-top: 9px; font-size: 22px; padding-left: 70px; }
+.redundancy-plan-box li { font-size: 12px; }
+.content-block h4 { font-size: 20px; margin-bottom: 40px; }
+.content-block li { float: left; width: 100%; text-align: center; margin-bottom: 10px;}
+.content-block span { font-size: 14px; }
+.content-block-image-list { max-width: 33px; margin-right: 21px; max-height: 32px;  margin: 0 auto 10px; }
+.content-block ul { margin-bottom: 0px; }
+.affiliate-banner-section { padding: 0px 0px 50px 0px; }
+.affiliate-banner-text h1 { font-size: 30px; line-height: 32px; }
+.affiliate-banner-text p { font-size: 14px; margin-bottom: 15px;}
+.affiliate-banner-btn { font-size: 12px; }
+.affiliate-plan-box { padding: 40px 30px; }
+.affiliate-text h4 { font-size: 20px; line-height: 24px; }
+.affiliate-inner-plan-box h4 { margin-bottom: 10px; font-size: 20px; }
+.affiliate-inner-plan-box .small-price { font-size: 26px; line-height: 26px;}
+.affiliate-inner-plan-box p { margin-bottom: 15px; }
+.affiliate-inner-plan-box .large-price { font-size: 35px; line-height: 35px; }
+.affiliate-program-text h1 { font-size: 26px; }
+.affiliate-program-text p { font-size: 14px; line-height: 22px; }
+.affiliate-program-plan-box h4 { font-size: 19px; margin-bottom: 10px; }
+.affiliate-program-plan-box .circle { margin: 0 auto 15px; }
+.premium-text-section { padding: 0px 0px 50px 0px; }
+.content-box-text h1 { font-size: 30px; line-height: 32px; }
+.content-box-text p { font-size: 14px; line-height: 18px; }
+.ssl-certificate-plan-box ul { width: 100%; }
+.ssl-certificate-plan-box { padding: 40px; }
+.ssl-certificate-query-text { padding-top: 30px; }
+.ssl-certificate-query-section h1 { font-size: 26px;  margin-bottom: 10px; }
+.ssl-certificate-query-section p { font-size: 12px; line-height: 20px; }
+.choose-ssl-certificate-section .our-datacenter-plan-box-inner h4 { font-size: 20px; }
+.choose-ssl-certificate-section li { font-size: 14px; padding: 8px 0px 5px 0px; }
+.choose-ssl-certificate-section ul { margin-bottom: 15px; }
+.choose-ssl-certificate-section .our-datacenter-plan-box-inner-btn { padding: 12px 30px; }
+.ssl-certificate-outcome .redundancy-plan-box h4 { font-size: 20px; }
+.choose-ssl-certificate-section .validation { margin-bottom: 10px; font-size: 12px; }
+.accordion-card button.btn.btn-link.collapsed { padding-right: 50px; }
+.accordion-card button.btn.btn-link  { padding-right: 50px; }
+.blog_banner { padding: 50px 0px; }
+.blog_banner .banner_content_box h1 { font-size: 26px; line-height: 32px; }
+.home-image-slider .banner-text p { font-size: 14px; }
+.home-image-slider .text-paragraph p { padding: 8px 0% 0px 0%; font-size: 14px; }
+.home-image-slider .text-paragraph span { font-size: 14px; }
+.home-image-field-section h1 { font-size: 26px; line-height: 28px; }
+.home-image-field-section ul { padding-left: 0% !important; }
+#home-image-guarrantee-section h4 { padding: 0 0%; }
+#home-image-footer-field p { font-size : 15px; }
+#home-image-footer-section .contact-plan-box-setting { margin-bottom: 35px; }
+#home-image-review-section ul { margin-bottom: 30px; }
+.home-image-web-hosting-plan-box:after { top: 193px; }
+#home-image-review-section .review-section-text { font-size: 14px; line-height: 22px; }
+.home-image-web-hosting-plan-box { margin-bottom: 25px; }
+#home-image-hosting-section .hosting-img-1, #home-image-hosting-section .hosting-img-2, #home-image-hosting-section .hosting-img-3 { position: relative; }
+#home-image-hosting-section h4 { padding-left: 0px; margin-bottom: 12px !important; }
+.home-gaming-sub-section p { padding: 0; margin-bottom: 20px; }
+.home-gaming-sub-section .slider-2 p, .home-gaming-sub-section .slider-3 p { padding: 0; margin-bottom: 20px; }
+.home-gaming-sub-section #banner_slider .carousel-inner { padding: 20px 0 50px 0; }
+#premium-plans-section figure { margin: 0 auto 22px; }
+#premium-plans-section .plan h4 { font-size: 20px; }
+#premium-plans-section .plan p { margin-bottom: 5px; font-size: 14px; line-height: 20px; }
+#home-gaming-vision-section h1 { font-size: 26px; line-height: 28px; }
+.home-gaming-vision-text p { font-size: 14px; line-height: 22px; padding: 0 0%; }
+.home-gaming-vision-text { margin-bottom: 30px; }
+#home-gaming-vision-section .vision-plan-box { padding: 30px 30px; }
+#home-gaming-network-map p { padding: 0%; }
+#home-feature-section .game-feature-image-list { max-width: 50px; max-height: 44px; }
+    
+    #pr-play-msg {
+    margin-top: 10px;
+  font-size: 12px;
+
+}
+}
+@media (min-width:0px) and (max-width:767px){
+.right-toolbar-options .dropdown-menu.pull-right{left:0;right:auto;}
+}
+@media (max-width:479px){
+ 
+  .tabs-section .tab-btn {padding: 8px 15px;}
+
+ .first-tab-btn, .tab-btn { font-size: 11px !important; }  
+    
+.dropdown-menu li{text-align:left!important;}
+    .list-unstyled li a{
+        font-size: 12px !important;
+    }
+   
+}
+
+@media screen and (max-width: 390px) {
+.stats-dl, #site-added-on{
+	display:none;
+  }
+	.tabs-section .tab-btn {padding: 8px 9px;}
+
+ .first-tab-btn, .tab-btn { font-size: 10px !important; } 
+}
+
+@media (max-width:767px){
+.fileManagerList .fileListing span.filename{max-width:80%!important;}
+
+}
+@media (max-width:799px){
+.responsiveAlign{text-align:center!important;float:none!important;}
+.pagination>li>a{padding:4px!important;}
+    
+        #play-btn{
+        font-size: 35px;
+    }
+}
+@media (max-width:1023px){
+.paginationRow span{display:none;}
+.filesize{display:none!important;}
+.fileUploadDate{display:none!important;}
+.downloadCount{display:none!important;}
+.fileOwner{display:none!important;}
+}
+@media (max-width:1100px){
+.fileManager .toolbar-container .pull-right{float:left!important;}
+.fileManager .toolbar-container .col-md-6{/*! width:100%; */}
+.image-browse .toolbar-container .right-toolbar-options .btn-toolbar{margin-left:-7px;}
+.row.breadcrumbs-container{border-bottom:1px solid #ebebec;}
+.animate-charcter
+    {
+        font-size:30px !important;
+    }
+    .image-upload-wrap {width: 100% !important;}
+}
+@media (max-width:1000px){
+.fileListing .filename{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.fileManagerList .fileListing span.filename{max-width:70%;}
+}
+@media (max-width:1265px){
+#statusText{display:none;}
+}
+@media (max-width:767px){
+.fileManager .col-xs-4{float:inherit;}
+.image-browse .fileListing,.breadcrumbs-container .col-md-12{text-align:center;}
+.fileManager .toolbar-container .pull-right{float:unset!important;text-align:center;}
+.image-browse .toolbar-container .right-toolbar-options .btn-toolbar .btn-group{float:unset!important;}
+.image-browse #folderBreadcrumbs2{display:none;}
+
+}
+

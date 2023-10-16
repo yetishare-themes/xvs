@@ -1,0 +1,57 @@
+{% extends "partial/layout.html.twig" %}
+
+{% block title %}{{ t("login_2fa_page_name", "2FA") }}{% endblock %}
+{% block description %}{{ t("login_2fa_meta_description", "Login to your account") }}{% endblock %}
+{% block keywords %}{{ t("login_2fa_meta_keywords", "login, register, image, picture, pic, img, hosting, sharing, upload, storage, site, website") }}{% endblock %}
+
+{% block body %}
+    <section class="height-80 text-center">
+        <div class="container pos-vertical-center">
+            <div class="row">
+            
+            <!-- RECOVER FORM -->
+    <section class="account-info-section">  
+        <div class="container">
+            <div class="account-info-box">
+                <div class="account-info-section-text text-center">
+                <h1 class="mb-xl-3 mb-lg-3 mb-md-3 mb-sm-3 mb-2">{{ t("login_2fa_page_name", "2FA") }}</h1>
+                                    {% if msg_page_errors is defined %}
+                    <div class="alert bg--error">
+                        <div class="alert__body"><i class="fa fa-exclamation-triangle color--error"></i>&nbsp;&nbsp;{% if msg_page_errors is defined %}{{ msg_page_errors|join('. ') }}{% endif %}</div>
+                    </div>
+                    {% endif %}
+                <p>{{ t("login_2fa_intro_text", "Please confirm your 2FA access code.") }}</p>
+                </div>
+
+                <form class="account-info-form"  method="POST"  id="form_login" action="{{ CORE_SITE_PATH }}/account/login_2fa" autocomplete="off" >
+
+                    <div class="form-row">
+                        <div class="col">
+                            <div class="form-group">    
+                                <input type="text" class="form-control" placeholder="{{ t("access_code_2fa", "2FA Access Code") }}" name="access_code_2fa" id="access_code_2fa" autofocus/> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                      
+                    </div>
+                    <div class="submitform-button">
+                    <button  style="margin-bottom: 20px;" type="submit" id="submit" class="submitform-btn button-effect" >{{ t("confirm", "confirm")|title }}</button>
+                    </div>
+                    <input type="hidden" value="1" name="submitme"/>
+                  </form>
+                  
+                                    <span class="type--fine-print block">
+
+                         <a href="{{ CORE_SITE_PATH }}/account/login">{{ t("login", "login")|title }}</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{{ CORE_SITE_PATH }}/contact">{{ t("no_access_code", "no access code?")|title }}</a>
+                    </span>
+            </div>
+        </div>
+    </section>    
+                
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+{% endblock %}

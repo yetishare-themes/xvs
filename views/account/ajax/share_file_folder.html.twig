@@ -1,0 +1,79 @@
+{% set share_urls_template %}
+    <!-- just add href= for your links, like this: -->
+    <a onclick="return checkSocialLink(this);" href="https://www.facebook.com/sharer/sharer.php?u={{ shareLink }}" data-placement="bottom" data-toggle="tooltip" data-original-title="{{ t("share_on", "Share On") }} Facebook" target="_blank" class="btn btn-social-icon btn-facebook"><i class="fab fa-facebook-f"></i></a>
+    <a onclick="return checkSocialLink(this);" href="https://twitter.com/share?url={{ shareLink }}" data-placement="bottom" data-toggle="tooltip" data-original-title="{{ t("share_on", "Share On") }} Twitter" target="_blank" class="btn btn-social-icon btn-twitter"><i class="fab fa-twitter"></i></a>							
+    <a onclick="return checkSocialLink(this);" href="https://www.linkedin.com/cws/share?url={{ shareLink }}" data-placement="bottom" data-toggle="tooltip" data-original-title="{{ t("share_on", "Share On") }} Linkedin" target="_blank" class="btn btn-social-icon btn-linkedin"><i class="fab fa-linkedin-in"></i></a>
+
+    <a onclick="return checkSocialLink(this);" href="http://reddit.com/submit?url={{ shareLink }}&title={{ fileFolder.folderName }}" data-placement="bottom" data-toggle="tooltip" data-original-title="{{ t("share_on", "Share On") }} Reddit" target="_blank" class="btn btn-social-icon btn-reddit"><i class="fab fa-reddit-alien"></i></a>
+    <a onclick="return checkSocialLink(this);" href="http://www.stumbleupon.com/submit?url={{ shareLink }}&title={{ fileFolder.folderName }}" data-placement="bottom" data-toggle="tooltip" data-original-title="{{ t("share_on", "Share On") }} StumbleUpon" target="_blank" class="btn btn-social-icon btn-stumbleupon"><i class="fab fa-stumbleupon"></i></a>
+    <a onclick="return checkSocialLink(this);" href="http://digg.com/submit?url={{ shareLink }}&title={{ fileFolder.folderName }}" data-placement="bottom" data-toggle="tooltip" data-original-title="{{ t("share_on", "Share On") }} Digg" target="_blank" class="btn btn-social-icon btn-digg"><i class="fab fa-digg"></i></a>
+    <a onclick="return checkSocialLink(this);" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl={{ shareLink }}&title={{ fileFolder.folderName }}&caption={{ fileFolder.folderName }}" data-placement="bottom" data-toggle="tooltip" data-original-title="{{ t("share_on", "Share On") }} Tumblr" target="_blank" class="btn btn-social-icon btn-tumblr"><i class="fab fa-tumblr"></i></i></a>
+    {% endset %}
+
+<script>loadExistingInternalShareTable({{ fileIds|json_encode }}, {{ folderIds|json_encode }});</script>
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h4 class="modal-title">
+        {{ t("share", "share")|title }} 
+        {% if fileFolderCount > 0 %}{{ fileFolderCount }} 
+            {% if fileFolderCount == 1 %}
+                {{ t("folder", "folder")|title }}
+            {% else %}
+                {{ t("folders", "folders")|title }}
+            {% endif %}
+        {% endif %}
+        {% if fileFolderCount > 0 and fileCount > 0 %} &amp; {% endif %}
+        {% if fileCount > 0 %}{{ fileCount }} 
+            {% if fileCount == 1 %}
+                {{ t("file", "file")|title }}
+            {% else %}
+                {{ t("files", "files")|title }}
+            {% endif %}
+        {% endif %}
+    </h4>
+</div>
+
+<div class="modal-body" style="margin-left: 35px;margin-right:35px;">
+    <div id="publicshare">
+                    <div class="row">
+                        <div class="col-md-12" style="margin-bottom: 20px;">
+                            <p>
+                                {{ t("share_items_intro_text_non_account", "Use the form below to generate a unique sharing url for the selected items. This will provide access to view and download the files without needing an account. Note that sharing a folder will also grant access to any sub-folders/files.") }}
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="folderName" class="control-label">{{ t('edit_folder_sharing_url', 'Sharing Url:') }}</label>
+                                <div class="input-group">
+                                    <pre style="margin: 0px; cursor: pointer; white-space: normal;"><section id="sharingUrlInput" onClick="selectAllText(this); return false;">{{ t("click_refresh_button_to_generate", "Click 'refresh' button to generate...") }}</section></pre>
+                                    <span class="input-group-btn" style="vertical-align: top;">
+                                        <button type="button" class="btn btn-primary" onClick="generateFolderSharingUrl({{ fileIds|json_encode }}, {{ folderIds|json_encode }}); return false;" title="{{ t("click_to_generate_sharing_url", "Click to generate the sharing url...") }}" style="padding: 7px 12px;"><i class="fas fa-sync-alt"></i></button>
+                                    </span>
+                                </div>
+
+                                <div id="nonPublicSharingUrls" class="social-wrapper disabled">
+                                    {{ share_urls_template }}
+                                </div>
+
+                                <div class="social-wrapper-template" style="display: none;">
+                                    {{ share_urls_template }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12" style="margin-top: 14px;">
+                            <p>{{ t("sharing_you_can_also_set_a_folder_as_public_text", "You can also set individual folders as 'public' so they can be accessed without the need to generate sharing urls. See the 'edit folder' popup to enable this.") }}</p>
+                        </div>
+                    </div>
+                </div>
+</div>
+
+<div class="modal-footer">
+    <button type="button" class="btn btn-warning" data-dismiss="modal">{{ t("close", "close") }}</button>
+</div>

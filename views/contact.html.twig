@@ -1,0 +1,100 @@
+{% extends "partial/layout.html.twig" %}
+
+{% block title %}{{ t("contact_page_name", "Contact Us") }}{% endblock %}
+{% block description %}{{ t("contact_meta_description", "Contact us") }}{% endblock %}
+{% block keywords %}{{ t("contact_meta_keywords", "contact, us, questions, queries, file, hosting") }}{% endblock %}
+
+{% block body %}
+   
+  <!-- CONTACT FORM -->
+    <section class="account-section" style="float:none">  
+        <div class="container">
+            <div class="content-data" style="padding: 20px;margin-top: 60px;margin-bottom: 100px;">
+                <div class="contact-form-section-text text-center" style="margin-bottom: 41px;">
+                <h1 class="mb-xl-3 mb-lg-3 mb-md-3 mb-sm-3 mb-2">{{ t("contact_page_name", "Contact Us") }}</h1>
+                   <p>{{ t('contact_intro', 'Please use the following form to contact us with any queries. Abuse reports should be sent via our <a href="[[[ABUSE_URL]]]">abuse pages</a>.', {'ABUSE_URL': WEB_ROOT ~ '/abuse/'})|raw }}</p>
+                </div>
+                <div id="form_result">
+                
+                  {% if msg_page_errors is defined %}
+                    <div class="alert bg--error">
+                        <div class="alert__body"><i class="fa fa-exclamation-triangle color--error"></i>&nbsp;&nbsp;{% if msg_page_errors is defined %}{{ msg_page_errors|join('. ') }}{% endif %}</div>
+                    </div>
+                    {% elseif msg_page_successes is defined %}
+                    <div class="alert bg--success">
+                        <div class="alert__body"><i class="fa fa-check color--success"></i>&nbsp;&nbsp;{% if msg_page_successes is defined %}{{ msg_page_successes|join('. ') }}{% endif %}</div>
+                    </div>
+                  {% endif %}
+                </div>
+                
+                <form class="contact-form-plan-box" id="contactpage" action="{{ CORE_SITE_PATH }}/contact" method="POST">
+                    <input style="display:none"><input type="password" style="display:none">
+                    <div class="form-group">    
+                        <select class="form-control select-form"  id="queryType" name="queryType" onChange="selectTypeItem(); return false;">
+          
+                          <option>{{ t('contact_select_subject', 'Select subject') }}</option>
+                                    {% for k,queryTypeOption in queryTypes %}
+                                        <option value="{{ k }}" {{ (queryType == k) ? 'SELECTED' : '' }}>{{ queryTypeOption }}</option>
+                                    {% endfor %}
+                                </select>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="col">
+                        <div class="form-group">    
+                            <input type="text" class="form-control" placeholder="{{ t('contact_full_name', 'Your full name') }}" name="fullName" id="fullName"> 
+                        </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">    
+                                <input class="form-control" name="emailAddress" id="emailAddress" value="{{ emailAddress }}" type="email" autocomplete="off" required="required"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="textarea form-group" style="padding-top: 18px; font-size: 14px;border: 1px solid #e8eaf1;">    
+                            <textarea class="form-control"  placeholder="Message..." rows="5" name="query" id="query" style="height: 139px;" required="required">{{ query }}</textarea>
+                        </div>
+                    </div>
+                    
+                     {% if SITE_CONFIG_CONTACT_FORM_SHOW_CAPTCHA == 'yes' %}
+                            <div class="col-md-12" style="margin-bottom:50px">
+                                <div class="input-group" style="display: block; overflow: hidden;">
+                                    {{ CoreHelper.outputCaptcha()|raw }}
+                                </div>
+                            </div>
+                            {% endif %}
+                            
+                    <div class="submitform-button">
+                    <button type="submit" id="submit" class="submitform-btn button-effect" >{{ t("contact_submit_form", "submit form")|title }}</button>
+                    </div>
+                  </form>
+                  
+            </div>
+        </div>
+         
+    </section>    
+
+
+{% endblock %}
+
+{% block footerjs %}
+<script>
+function selectTypeItem()
+{
+    if ($('#queryType').val() == 'contact_query_type_abuse_report')
+    {
+        if (confirm({{ t('contact_abuse_report_popup_notice', 'Please submit all abuse reports via our dedicated abuse report page. Click OK to continue to it now.')|json_encode()|raw }}))
+        {
+            $('#queryType').val('contact_query_type_site_support');
+            window.location = '{{ WEB_ROOT }}/report_file';
+        }
+        else
+        {
+            $('#queryType').val('contact_query_type_site_support');
+        }
+    }
+}
+</script>
+{% endblock %}

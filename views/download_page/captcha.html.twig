@@ -1,0 +1,87 @@
+{% extends "partial/layout.html.twig" %}
+
+{% block title %}{{ file.originalFilename }}{% endblock %}
+{% block description %}{{ file.description|length > 0 ? file.description|slice(0, 250) : t("file_download_description", "Download file")~' - '~file.originalFilename }}{% endblock %}
+{% block keywords %}{{ file.getFileKeywords() }}{% endblock %}
+
+{% block body %}
+
+  
+<div class="container ">
+<div class="row">
+                       
+<!-- LOGIN  FORM -->
+    <section id="premium-download-page" class="account-info-section text-center" style="width:100%; padding:57px 0px 102px 0px;">  
+        <div class="container">
+            <div class="account-info-box" style="padding: 25px;">
+                <div class="account-info-section-text text-center d-flex align-items-center justify-content-center">
+                   <div class="col-12">
+                    <div class="col-lg-1"></div>
+           
+                        <h4 style="margin-top: 20px;margin-bottom: 30px;word-wrap: break-word;">    {{ file.originalFilename }} (<span style="color:#ff687d">{{ file.getFormattedFilesize() }}</span>)</h4>
+                       
+
+                    {% if msg_page_errors is defined %}
+                        <div class="alert bg--error" style="max-width: 450px;margin: 0 auto;">
+                            <div class="alert__body"><i class="fa fa-exclamation-triangle color--error"></i>&nbsp;&nbsp;{% if msg_page_errors is defined %}{{ msg_page_errors|join('. ') }}{% endif %}</div>
+                        </div>
+                    {% endif %}
+                    <div class="col-md-12" style="align-items: center;display: flex;justify-content: center;">
+                    <form method="POST" action="{{ file.getFullLongUrl() }}?pt={{ pt }}" autocomplete="off">
+                        <table class="border--round download-page-simple-timed text-center">
+                            <tbody>
+                                <tr>
+                                    <th class="col-md-3 responsiveInfoTable">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="input-group" style="display: block; overflow: hidden;">
+                                            {{ CoreHelper.outputCaptcha()|raw }}
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button type='submit' class="btn btn--primary">
+
+<span class="btn__text" style="padding: 14px 36px;color: var(--global--color-white);font-size: 14px;font-weight: 700;border-radius: 50px;text-decoration: none;transition: all 0.3s ease-in-out;background: var(--global--color-pink);display: inline-block;box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);margin-top: 30px;font-size: 1.5em;background: #1e222f;text-transform: capitalize;">
+                                                {{ t('download', 'download')|upper }}
+                                            </span>                                            
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <input type="hidden" name="submitted" value="1"/>
+                        <input type="hidden" name="d" value="1"/>
+                    </form>
+                </div>
+  
+
+                {% if UserHelper.showSiteAdverts() %}
+                   <div class="col-md-12 text-center advert-wrapperr bottom-advertt" style="margin-top: 41px;">
+                        {{ file.shouldShowAdultAdvert() == true ? SITE_CONFIG_ADULT_ADVERT_DELAYED_REDIRECT_BOTTOM|raw : SITE_CONFIG_ADVERT_DELAYED_REDIRECT_BOTTOM|raw }}
+                    </div>
+                {% endif %}
+
+
+            </div>
+            
+        </div>
+    </section>    
+ 
+
+    </div>
+</div>
+
+
+
+    {% include '@themePath/partial/_premium_benefits.html.twig' %}
+{% endblock %}
+
+{% block footerjs %}
+    {% if downloadPageData['additional_javascript_code'] is defined %}
+        {{ downloadPageData['additional_javascript_code']|raw }}
+    {% endif %}
+{% endblock %}

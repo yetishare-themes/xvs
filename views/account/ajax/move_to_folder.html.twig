@@ -1,0 +1,49 @@
+<form action="" autocomplete="off">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Move
+        
+        {% if fileFolderCount > 0 %}{{ fileFolderCount }} 
+            {% if fileFolderCount == 1 %}
+                {{ t("folder", "folder")|title }}
+            {% else %}
+                {{ t("folders", "folders")|title }}
+            {% endif %}
+        {% endif %}
+        {% if fileFolderCount > 0 and fileCount > 0 %} &amp; {% endif %}
+        {% if fileCount > 0 %}{{ fileCount }} 
+            {% if fileCount == 1 %}
+                {{ t("file", "file")|title }}
+            {% else %}
+                {{ t("files", "files")|title }}
+            {% endif %}
+        {% endif %}
+        
+        </h4>
+    </div>
+
+    <div class="modal-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="folder" class="control-label">{{ t("select_folder", "Select folder")|title }}</label>
+                        <select class="form-control" name="moveFolderId" id="moveFolderId">
+                            <option value="">/</option>
+                            {% for k,folderListingItem in folderListing %}
+                                <option value="{{ k }}"{{ currentFolderId==k?" selected":"" }}>
+                                    {{ folderListingItem }}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="modal-footer">
+        <input type="hidden" name="submitme" id="submitme" value="1"/>
+        <input type="hidden" value="{{ safeFileIds|join(',') }}" name="fileIds"/>
+        <button type="button" class="btn btn-default" data-dismiss="modal">{{ t("cancel", "cancel") }}</button>
+        <button type="button" class="btn btn-warning" onClick="processMoveFiles();
+                return false;">{{ t("move", "move")|title }} <i class="entypo-check"></i></button>
+    </div>
+</form>

@@ -1,0 +1,821 @@
+    {% if block('selected_navigation_link')  is not defined %}
+        {% block selected_navigation_link %}''{% endblock %}
+    {% endif %}
+<!DOCTYPE html>
+<html lang="en" dir="{{ SITE_LANGUAGE_DIRECTION|upper }}" class="direction{{ SITE_LANGUAGE_DIRECTION|capitalize }} {% if block("html_element_class") is defined %}{{ block("html_element_class") }}{% endif %}">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ block('title') }} - {{ SITE_CONFIG_SITE_NAME }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="{{ block('description') }}"/>
+        <meta name="keywords" content="{{ block('keywords') }}" />
+
+        {% if SITE_CONFIG_SHOW_COOKIE_NOTICE == 'yes' %}
+            <link href="{{ theme.getFrontendCssPath() }}/cookiealert.css" rel="stylesheet">
+        {% endif %}
+
+        <link href="{{ theme.getFrontendCssPath() }}/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Russo+One">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+        <link rel="stylesheet" href="{{ theme.getAccountCssPath() }}/custom.css" />
+        
+       
+
+        <link href="{{ theme.getFrontendCssPath() }}/style.css?v=2" rel="stylesheet" type="text/css" media="all" />
+
+        <link rel="stylesheet" href="{{ theme.getAccountCssPath() }}/responsive.css" />
+
+        <script src="{{ theme.getAccountJsPath() }}/jquery-1.11.0.min.js"></script>
+
+       <script type="text/javascript" src="{{ theme.getAccountJsPath() }}/evolution.js"></script>
+        
+      
+
+        <!-- mobile swipe navigation -->
+        <script type="text/javascript" src="{{ theme.getAccountJsPath() }}/jquery.touchSwipe.min.js"></script>
+
+
+
+        <!--[if lt IE 9]><script src="{{ theme.getAccountJsPath() }}/ie8-responsive-file-warning.js"></script><![endif]-->
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+                <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+                <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+    
+  
+        <script type="text/javascript">
+            document.domain = '{{ documentDomain }}';
+            var ACCOUNT_WEB_ROOT = "{{ theme.getAccountWebRoot() }}";
+            var SITE_THEME_WEB_ROOT = "{{ SITE_THEME_WEB_ROOT }}";
+            var SITE_CSS_PATH = "{{ theme.getAccountCssPath() }}";
+            var SITE_IMAGE_PATH = "{{ theme.getAccountImagePath() }}";
+            var _CONFIG_SITE_PROTOCOL = "{{ _CONFIG_SITE_PROTOCOL }}";
+            var CORE_AJAX_WEB_ROOT = "{{ CORE_AJAX_WEB_ROOT }}";
+            var LOGGED_IN = {% if Auth.loggedIn() == 'true' %}true{% else %}false{% endif %};
+        </script>
+
+        
+
+         {% if block('selected_navigation_link')  == 'home' %}
+            {% if Auth.loggedIn() == true %}
+                {% include '@themePath/partial/_home_js_header.html.twig' %}
+    
+            {% elseif UserHelper.getAllowedToUpload(0) == true and SITE_CONFIG_ENABLE_USER_REGISTRATION == 'yes' %}
+                {% include '@themePath/partial/_home_js_header.html.twig' %}
+    
+            {% endif %}
+        
+        {% endif %}
+        
+        
+
+
+        
+      
+      
+<style>
+
+
+
+
+.play-btn:hover{
+  cursor: pointer;
+}
+
+
+:root {
+  --plyr-color-main: #ffc107;
+}
+
+
+.plyr__control--overlaid {
+ background:rgba(8,11,14,.8);
+
+ border-radius:5px !important;
+
+}
+
+
+.plyr {
+    max-height: 600px;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    margin: 20px auto;
+}
+
+.plyr__poster {
+  background-size:cover;
+}
+
+.PlyrvideoWrapper{
+    display: flex;
+    justify-content:center;
+    width: 100%;
+  
+}
+
+.fade {opacity: 1;}
+
+.fade:not(.show) { opacity: 1; }
+
+.modal-backdrop{ opacity:0.5 !important; }
+
+
+
+#fileUploadWrapper .nav{ display: block;}
+#fileUploadWrapper .nav{margin-bottom:0;padding-left:0;list-style:none;}
+#fileUploadWrapper .nav:before,.nav:after{content:" ";display:table;}
+#fileUploadWrapper .nav:after{clear:both;}
+#fileUploadWrapper .nav:before,.nav:after{content:" ";display:table;}
+#fileUploadWrapper .nav:after{clear:both;}
+#fileUploadWrapper .nav>li{position:relative;display:block;}
+#fileUploadWrapper .nav>li>a{position:relative;display:block;padding:10px 15px;}
+
+#fileUploadWrapper .nav-tabs{border-bottom:1px solid #ebebeb;margin-top:20px;margin-bottom:10px;}
+#fileUploadWrapper .nav-tabs>li{display:inline-block;margin-bottom:-1px;}
+#fileUploadWrapper .nav-tabs>li>a{margin-right:4px;line-height:1.42857143;border:1px solid transparent;border-radius:3px 3px 0 0;}
+
+#fileUploadWrapper .nav-tabs>li:first-child>a{margin-left:10px;}
+#fileUploadWrapper .nav-tabs>li.active>a,#fileUploadWrapper .nav-tabs>li.active>a:hover,#fileUploadWrapper .nav-tabs>li.active>a:focus{color:#555;background-color:#fff;border:1px solid #ddd;border-bottom-color:transparent;cursor:default;}
+#fileUploadWrapper .nav-tabs.bordered{margin-bottom:0;}
+#fileUploadWrapper .nav-tabs.bordered>li:first-child>a{margin-left:0;}
+#fileUploadWrapper .nav-tabs.bordered>li:last-child>a{margin-right:0;}
+
+#fileUploadWrapper .nav-tabs>li{float:none;display:inline-block;*display:inline;zoom:1;}
+#fileUploadWrapper .file-upload-wrapper .nav-tabs{text-align:center;}
+#fileUploadWrapper .file-upload-wrapper .nav-tabs{margin-top:0;}
+
+
+.modal-header {display: block;}
+
+
+
+body {
+ 
+  font-size: 12px;
+
+  color: #001737;
+}
+
+
+a {
+  color: #001737;
+  text-decoration: none;
+}
+
+.form-control{display:block;width:100%;height:31px;padding:6px 12px;font-size:12px;line-height:1.42857143;color:#555;background-color:#fff;background-image:none;border:1px solid #ebebeb;border-radius:3px;-webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;-moz-transition:border-color ease-in-out .15s,-moz-box-shadow ease-in-out .15s;-o-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;-webkit-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;}
+.form-control:focus{border-color:#c8cdd7;outline:0;-moz-box-shadow:0 2px 1px rgba(203,208,217,.08);-webkit-box-shadow:0 2px 1px rgba(203,208,217,.08);box-shadow:0 2px 1px rgba(203,208,217,.08);}
+.form-control::-webkit-input-placeholder{color:#aaa;}
+.form-control:-moz-placeholder{color:#aaa;}
+.form-control::-moz-placeholder{color:#aaa;}
+.form-control:-ms-input-placeholder{color:#aaa;}
+.form-control:-moz-placeholder{color:#aaa;}
+.form-control::-moz-placeholder{color:#aaa;}
+.form-control:-ms-input-placeholder{color:#aaa;}
+.form-control::-webkit-input-placeholder{color:#aaa;}
+.form-group{margin-bottom:15px;}
+.btn{display:inline-block;margin-bottom:0;font-weight:600;text-align:center;vertical-align:middle;cursor:pointer;background-image:none;border:1px solid transparent;white-space:nowrap;padding:6px 12px;font-size:12px;line-height:1.42857143;border-radius:3px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;}
+.btn:focus{outline:thin dotted #333;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px;}
+.btn:hover,.btn:focus{color:#303641;text-decoration:none;outline:none;}
+.btn:active{outline:none;background-image:none;-moz-box-shadow:inset 0 0 7px rgba(0,0,0,.225);-webkit-box-shadow:inset 0 0 7px rgba(0,0,0,.225);box-shadow:inset 0 0 7px rgba(0,0,0,.225);-moz-box-shadow:inset 0 0 4px rgba(0,0,0,.2);-webkit-box-shadow:inset 0 0 4px rgba(0,0,0,.2);box-shadow:inset 0 0 4px rgba(0,0,0,.2);}
+
+.btn-green{color:#fff;background-color:#5d958a;border-color:#6d9e94;}
+.btn-green:hover,.btn-green:focus,.btn-green:active{color:#fff;background-color:#0e1017;border-color:#0e1017;}
+.btn-green:active{background-image:none;}
+.btn-lg{padding:10px 16px;font-size:15px;line-height:1.33;border-radius:3px;}
+
+
+.btn-orange {
+  color: #fff;
+  background-color: #ff9600;
+  border-color: #ff9600;
+  
+}
+.btn-default{color:#303641;background-color:#f0f0f1;border-color:#f0f0f1;}
+.btn-default:hover,.btn-default:focus,.btn-default:active{color:#303641;background-color:#dbdbdd;border-color:#d0d0d3;}
+.btn-default:active{background-image:none;}
+
+.panel{margin-bottom:17px;background-color:#fff;border:1px solid transparent;border-radius:3px;}
+.panel.minimal>.panel-heading{padding:0;border-bottom:1px solid #ebebeb;}
+.panel.minimal>.panel-heading>.panel-title{position:relative;color:#373e4a;padding:0;padding-bottom:10px;top:8px;}
+.panel.minimal>.panel-body{padding-left:0;padding-right:0;}
+.panel-body{position:relative;padding:15px;}
+.panel-body:before,.panel-body:after{content:" ";display:table;}
+.panel-body:after{clear:both;}
+.panel-body:before,.panel-body:after{content:" ";display:table;}
+.panel-body:after{clear:both;}
+.panel-heading{border-bottom:1px solid transparent;border-top-right-radius:3px;border-top-left-radius:3px;}
+.panel-heading:before,.panel-heading:after{content:" ";display:table;}
+.panel-heading:after{clear:both;}
+.panel-heading:before,.panel-heading:after{content:" ";display:table;}
+.panel-heading:after{clear:both;}
+.panel-heading>.panel-title{float:left;padding:10px 15px;}
+.panel-title{margin-top:0;margin-bottom:0;font-size:14px;}
+
+.modal-footer {
+display: block;
+text-align: right;
+}
+
+
+
+@media (max-width:767px){
+.file-upload-wrapper .upload-button{margin-top:30px!important;}
+}
+
+
+
+
+.fade{opacity:0;-moz-transition:opacity .05s linear;-o-transition:opacity .05s linear;-webkit-transition:opacity .05s linear;transition:opacity .05s linear;}
+.fade.in{opacity:1;}
+.popover{position:absolute;top:0;left:0;z-index:1010;display:none;max-width:276px;padding:1px;text-align:left;background-color:#fff;background-clip:padding-box;border:1px solid #ccc;border:1px solid rgba(0,0,0,.2);border-radius:3px;white-space:normal;}
+.popover.right{margin-left:10px;}
+.popover-title{margin:0;padding:8px 14px;font-size:12px;font-weight:400;line-height:18px;background-color:#f7f7f7;border-bottom:1px solid #ebebeb;border-radius:5px 5px 0 0;}
+.popover-content{padding:9px 14px;}
+.popover .arrow,.popover .arrow:after{position:absolute;display:block;width:0;height:0;border-color:transparent;border-style:solid;}
+.popover .arrow{border-width:11px;}
+.popover .arrow:after{border-width:10px;content:"";}
+.popover.right .arrow{top:50%;left:-15.2px;margin-top:-11px;border-left-width:0;border-right-color:#999;border-right-color:rgba(0,0,0,.25);}
+.popover.right .arrow:after{content:" ";left:1px;bottom:-10px;border-left-width:0;border-right-color:#fff;}
+
+@media (max-width:1023px){
+.popover{display:none!important;}
+}
+.fade{opacity:0;-moz-transition:opacity .1s linear;-o-transition:opacity .1s linear;-webkit-transition:opacity .1s linear;transition:opacity .1s linear;}
+
+
+
+
+.dropdown-menu > li > a {
+
+  padding: 3px 3px;
+}
+
+
+.open>.dropdown-menu{display:block;}
+
+
+
+@media (max-width:479px){
+.dropdown-menu li{text-align:left!important;}
+}
+
+
+
+
+.browse-button{width:142px;height:142px;border:8px solid #745984;border-radius:50%;position:relative;left:50%;margin-left:-71px;}
+.browse-button:hover{-webkit-transform:scale(0.95);-moz-transform:scale(0.95);-o-transform:scale(0.95);transform:scale(0.95);cursor:pointer;}
+.browse-button .cloud1{background-image:url(https://megatube.net/themes/nix/assets/images/cloud1.png);background-repeat:no-repeat;width:71px;height:35px;position:absolute;top:50%;left:100%;margin-left:40px;-webkit-animation:cloudAnimation 4s linear infinite;-moz-animation:cloudAnimation 4s linear infinite;-o-animation:cloudAnimation 4s linear infinite;animation:cloudAnimation 4s linear infinite;}
+.browse-button .button-cloud1{background-image:url(https://megatube.net/themes/nix/assets/images/b-cloud1.png);background-repeat:no-repeat;width:83px;height:32px;position:absolute;top:5%;left:60%;-webkit-animation:cloudAnimation 5s linear infinite;-moz-animation:cloudAnimation 5s linear infinite;-o-animation:cloudAnimation 5s linear infinite;animation:cloudAnimation 5s linear infinite;}
+.browse-button .upload-cloud{background-image:url(https://userload.co/assets/img/upload-cloud.png);background-repeat:no-repeat;width:72px;height:48px;position:absolute;top:50%;left:50%;margin-top:-30px;margin-left:-36px;}
+.browse-button .button-cloud2{background-image:url(https://megatube.net/themes/nix/assets/images/b-cloud2.png);background-repeat:no-repeat;width:72px;height:25px;position:absolute;top:40%;margin-left:-45px;-webkit-animation:cloudAnimation 4s linear infinite;-moz-animation:cloudAnimation 4s linear infinite;-o-animation:cloudAnimation 4s linear infinite;animation:cloudAnimation 4s linear infinite;}
+.browse-button .cloud2{background-image:url(https://megatube.net/themes/nix/assets/images/cloud2.png);background-repeat:no-repeat;width:55px;height:22px;position:absolute;top:5%;margin-left:-100px;-webkit-animation:cloudAnimation 5s linear infinite;-moz-animation:cloudAnimation 5s linear infinite;-o-animation:cloudAnimation 5s linear infinite;animation:cloudAnimation 5s linear infinite;}
+@media (max-width: 480px){
+.browse-button .cloud1{display:none;}
+.browse-button .cloud2{display:none;}
+}
+.browse-button{transition:all 0.3s ease 0s;}
+
+
+.mobile-account-toolbar-wrapper li a::after {
+    content: none
+}
+
+.page-container.horizontal-menu header.navbar ul.nav > li.dropdown .dropdown-menu {
+  background-color: #fff;
+  -webkit-border-radius: 0 0 3px 3px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0 0 3px 3px;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  box-shadow: 0 1px 0 rgba(0,0,0,.05);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+    margin-top: 0px;
+  margin-top: 0;
+  width: 290px;
+  border: 1px solid #dee5e7;
+  border: 1px solid rgba(0,0,0,.1);
+    border-top-color: rgba(0, 0, 0, 0.1);
+    border-top-style: solid;
+    border-top-width: 1px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 6px rgba(0,0,0,.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,.1);
+}
+
+
+    .account-box-section h2{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        color: var(--global--color-yellow);
+    }
+    #stats-section p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--global--color-grey);
+        margin-bottom: 0px;
+        font-style: italic;
+    }
+
+
+.price{padding-top:0px;margin-bottom:0px;}
+
+#stats-section{ 
+	font-family: Russo One  ; 
+}
+
+.affiliate-table-box{padding:54px 49px;border-radius:15px;background:var(--global--color-white);box-shadow:0 30px 30px rgba(30, 34, 47, 0.03);}
+.affiliate-table-section .affiliate-table thead th{padding:18px 0px 22px 0px;border-right:1px solid  #e8eaf1;}
+.affiliate-table-section .affiliate-table tbody th{padding:19px 0px 16px 0px;border-right:1px solid  #e8eaf1;}
+.affiliate-table-section .affiliate-table td{padding:19px 0px 16px 8px;border-right:1px solid  #e8eaf1;}
+.affiliate-table-section .affiliate-table thead th:nth-child(1){width:225px;}
+.affiliate-table-section .affiliate-table thead th:nth-child(2){width:225px;}
+.affiliate-table-section .affiliate-table thead th:nth-child(3){width:165px;}
+.affiliate-table-section .affiliate-table thead th:nth-child(4){width:185px;}
+.affiliate-table-section .affiliate-table thead th:nth-child(5){width:205px;}
+.affiliate-table-section .affiliate-table td:last-child,.affiliate-table-section .affiliate-table th:last-child{border-right:none;}
+.affiliate-table-section .affiliate-table thead th{border-bottom:1px solid #e8eaf1;font-size:18px;color:var(--global--color-black);font-weight:700;}
+.affiliate-table-section .affiliate-table tbody th {font-size:14px;color:var(--global--color-lightgrey);font-weight:600;}
+.affiliate-table-section .affiliate-table tbody th .popular{font-size:12px;color:var(--global--color-black);background:var(--global--color-yellow);padding:4px 6px;font-weight:700;border-radius:5px;margin-left:5px;}
+.affiliate-table-section .affiliate-table tbody th .sale{font-size:12px;color:var(--global--color-white);background:var(--global--color-pink);padding:4px 7px;font-weight:700;border-radius:5px;margin-left:7px;}
+.affiliate-table-section .affiliate-table tbody td{font-size:14px;color:var(--global--color-lightgrey);font-weight:600;}
+.affiliate-table-section .affiliate-table tbody td .price{font-size:16px;color:var(--global--color-pink);font-weight:700;}
+.affiliate-table-section table{text-align:center; margin-bottom: 30px;}
+.affiliate-table-section tr th:first-child{text-align:left;padding-left:8px;}
+#stats tbody tr:last-child td {font-weight: bolder;padding-left:8px;
+}
+
+.affiliate-table tbody td{
+    padding-left:10px
+}
+
+
+.affiliate-table td, .affiliate-table th {
+  padding: .75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+
+
+@media screen and (max-width: 991px){
+
+.affiliate-table-section .affiliate-table thead th{font-size:16px;}
+.affiliate-table-section .affiliate-table tbody td,.affiliate-table-section .affiliate-table tbody td .price{font-size:14px;}
+.affiliate-table-section .affiliate-table tbody th .popular,.affiliate-table-section .affiliate-table tbody th .sale{font-size:10px;}
+}
+@media screen and (max-width: 767px){
+
+
+.affiliate-table-section .affiliate-table tbody td .price{display:block;}
+.affiliate-table-section .affiliate-table tbody th{vertical-align:middle;padding:0px;}
+.affiliate-table-section .affiliate-table thead th{font-size:15px;}
+}
+@media screen and (max-width: 576px){
+.price{padding-top:0px;}
+.affiliate-table-section .affiliate-table thead th{font-size:10px;}
+
+.affiliate-table-section .affiliate-table tbody th{font-size:10px;}
+.affiliate-table-section .affiliate-table tbody th .popular,.affiliate-table-section .affiliate-table tbody th .sale{font-size:7px;}
+.affiliate-table-section .affiliate-table tbody td,.affiliate-table-section .affiliate-table tbody td .price{font-size:10px;}
+}
+.remove-site:hover {cursor:pointer}
+
+
+
+.paging_full_numbers{padding:0;margin:0;display:inline-block;border-radius:4px;height:22px;line-height:22px;margin-top:16px;}
+.paging_full_numbers{text-align:center;display:block;}
+.paging_full_numbers a.paginate_button{background-color:#ddd;}
+.paging_full_numbers a.paginate_button{border:1px solid #ececec;cursor:pointer;padding:5px 13px;}
+.paging_full_numbers .paginate_button,.paging_full_numbers .current{margin:0;list-style-type:none;position:relative;padding:8px 16px;line-height:1.42857143;text-decoration:none;}
+.paging_full_numbers .current{background-color:var(--global--color-pink) !important;color:#fff;font-weight:700; padding:8px 16px !important;}
+.paging_full_numbers .paginate_button_disabled{cursor:inherit;opacity:.5;}
+.paging_full_numbers .paginate_button_disabled.paginate_button:hover{cursor:inherit;background-color:transparent;}
+.paging_full_numbers .paginate_button:hover{background-color:#f9f7f7;}
+
+.dataTables_info{text-align:center;display:block;}
+.dataTables_paginate .disabled {
+   display:none;
+}   
+dataTables_paginate .disabled + span {
+   display:none;
+}   
+
+
+#stats-block label{margin:0;font-size:1.14285714em;font-weight:400;}
+#stats-block input[type],select{-webkit-appearance:none;background:#fcfcfc;padding:.46428571em;border-radius:6px;border:1px solid #ececec;}
+#stats-block input[type]:focus,select:focus{outline:none;}
+#stats-block input[type]:active,select:active{outline:none;}
+#stats-block input[type]::-webkit-input-placeholder,select::-webkit-input-placeholder{color:#b3b3b3;font-size:1.14285714em;}
+#stats-block input[type]:-moz-placeholder,select:-moz-placeholder{color:#b3b3b3;font-size:1.14285714em;}
+#stats-block input[type]::-moz-placeholder,select::-moz-placeholder{color:#b3b3b3;font-size:1.14285714em;}
+#stats-block input[type]:-ms-input-placeholder,select:-ms-input-placeholder{color:#b3b3b3;font-size:1.14285714em;}
+#stats-block select{cursor:pointer;padding-right:1.85714286em;-webkit-appearance:none;}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+#stats-block select, #stats-block  input{font-size:14px;}
+}
+#stats-block input,#stats-block select{height: 33px;}
+#stats-block input,#stats-block select{transition:.3s ease;-webkit-transition:.3s ease;-moz-transition:.3s ease;}
+#stats-block input:not([class*=col-]),stats-block select:not([class*=col-]){width:100%;}
+#stats-block input[type],#stats-block select{padding-left:.92857143em;}
+#stats-block input[type]:focus,#stats-block select:focus{border-color:#76abe9;}
+#stats-block label{font-size:.85714286em;}
+@media all and (max-width:990px){
+#stats-block label{margin-top:.46428571em;}
+}
+}
+
+@media all{
+.dataTables_filter{margin-bottom:12px;}
+.dataTables_wrapper label,.dataTables_wrapper select,.dataTables_wrapper input{font-size:1em;}
+.dataTables_wrapper label{margin-right:4px;}
+}
+
+.daterangepicker .ranges li {
+ color: #1e222f;
+  background: #f9f9f9;
+ } 
+.daterangepicker .ranges li:hover {
+  border: 1px solid #dddfe0;
+  color: #1e222f;
+}
+
+
+.daterangepicker .ranges li.active, .daterangepicker{
+  background: #ff687d;
+    background-color: rgb(255, 104, 125);
+  border: 1px solid #ef6b7d;
+  color: #fff;
+}
+
+.daterangepicker .ranges li.active {
+  background-color: var(--global--color-pink) !important;
+}
+
+.daterangepicker td.active {
+  background-color: var(--global--color-pink) !important;
+}
+
+.daterangepicker td.off, .daterangepicker td.off.in-range, .daterangepicker td.off.start-date, .daterangepicker td.off.end-date {
+  background-color: #fff !important;
+  border-color: transparent;
+  color: #999 !important;
+}
+
+
+.table-striped tbody tr:nth-of-type(2n+1) {
+  background-color: rgba(132, 132, 132, 0.05) !important;
+}
+
+.sale-stats, .websites-stats, .payout-info, .payout-cancel{
+    cursor: pointer;
+}
+
+.pending, .paid, .cancelled, .processing {
+  font-size: 12px;
+  color: var(--global--color-black);
+  padding: 4px 6px;
+  font-weight: 700;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+.pending{  background: var(--global--color-yellow);}
+.paid{  background: #b6faba;}
+.processing{  background: #f5aeae;}
+.cancelled{  background: #dadada;}
+
+.paymentNote{font-size:12px}
+
+
+#payout-info-Modal .affiliate-inner-plan-box:hover {
+  transform: none;
+  box-shadow: none;
+  z-index: 0;
+}
+
+
+.nav > li > a:hover, .nav > li > a:focus {
+  text-decoration: none;
+}
+</style>
+</head>
+<body class="page-body">
+    <!-- HEADER -->
+    <header class="header" id="main-topbar">
+
+    
+  <!-- MAIN HEADER -->      
+        <div class="main-header pt-md-2 pb-md-2 pt-0 pb-0" id="main-header">
+            <div class="container pl-xl-0 pr-xl-0 pl-lg-0 pr-lg-0 pl-md-0 pr-md-0 pl-sm-0 pr-sm-0 pl-0 pr-0">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <a class="navbar-brand" href="{{ CORE_SITE_PATH }}">
+                        <figure class="navbar-logo">
+                        <img class="img-fluid" src="{{ theme.getAccountImagePath() }}/logo.png" alt="">
+                        </figure>
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                        
+                            {% if block('selected_navigation_link')  == 'settings' %}
+                                {% if Auth.loggedIn() == true %}
+                             
+                                        {% if unreadNotificationCount > 0 %}
+                            <ul class="mobile-account-toolbar-wrapper nav navbar-left pull-left">
+                                        <li class="dropdown responsive-Hide internal-notification">
+                                        <a style="position:relative" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                        <i class="fa fa-bell" style="font-size: 18px;margin-top: 8px;margin-right: 12px;"></i>
+                                            <span class="userNotify badge badge-warning">{{ unreadNotificationCount }} </span>
+                                        </a>
+                                        
+                                        
+                            <!-- dropdown menu -->
+                                    <ul class="dropdown-menu">
+                                        <li class="top">
+                                            <p class="small">
+                                                {% if unreadNotificationCount > 0 %}
+                                                    <a href="#" class="pull-right mark-read-link" onClick="markInternalNotificationsRead();
+                                                            return false;">{{ t('file_manager_mark_all_read', 'Mark all Read') }}</a>
+                                                {% endif %}
+                                                <span class="unread-count">{{ unreadNotificationCount != 1 ? (t('file_manager_you_have_x_new_notifications', 'You have <strong>[[[UNREAD]]]</strong> new notifications.', {'UNREAD': unreadNotificationCount})|raw) : (t('file_manager_you_have_x_new_notification', 'You have <strong>[[[UNREAD]]]</strong> new notification.', {'UNREAD': unreadNotificationCount})|raw) }}</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <ul class="dropdown-menu-list scroller" style="margin: 0;padding-left: 17px;">
+                                                {% for internalNotification in internalNotifications %}
+                                                    <li class="{{ internalNotification.is_read == 0 ? 'unread' : 'read' }} notification-{{ internalNotification.is_read == 0 ? 'info' : 'default' }}" style="padding-top: 12px;">
+                                                        <a href="{{ internalNotification.href_url|length > 0 ? internalNotification.href_url : '#' }}" {{ internalNotification.onclick?length ? (' onClick=' ~ internalNotification.onclick|json_encode()|raw) : '' }}>
+                                                               
+                                                            
+                                                            {% if internalNotification.is_read == 0 %}
+                                                                <i class="{{internalNotification.notification_icon}}   pull-right"></i>
+                                                            {% else %}
+                                                                <i class="fas fa-check  pull-right"></i>
+                                                            {% endif %}
+                                                         
+                                                         
+                                                            <span class="line {{ internalNotification.is_read == 0 ? 'text-bold' : '' }}">
+                                                                {{ internalNotification.content|raw }}
+                                                            </span>
+                                                            <span class="line small">
+                                                                {{ CoreHelper.timeToRelativeString(internalNotification.date_added) }}
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                        </li> 
+                                        
+                                        
+                         </ul>    
+                                        {% endif %}
+              
+                        {% endif %}   
+                     {% endif %}
+                        
+                            
+                            
+
+                            
+                                   
+                        
+                             <li class="item {{ (block('selected_navigation_link') == 'home') ? 'active' : '' }}">
+                                <a class="nav-link scroll" href="{{ CORE_SITE_PATH }}"><i class="fas fa-upload"></i> Upload</a>
+                            </li>
+     
+                            <li class="nav-item {{ (block('selected_navigation_link') == 'upgrade') ? 'active' : '' }}">
+                                <a class="nav-link scroll" href="{{ CORE_SITE_PATH }}/upgrade"><i class="far fa-star"></i> Premium</a>
+                            </li>
+                            
+                           {% if Auth.loggedIn() == true %}
+                                     
+                             <li class="nav-item  {{ (block('selected_navigation_link') == 'your_files') ? 'active' : '' }}">
+                                <a class="nav-link scroll" href="{{ CORE_SITE_PATH }}/account"><i class="far fa-folder"></i> Files</a>
+                            </li>
+                            
+                           
+                            
+
+                           {% endif %}
+                            
+     
+                          
+                                {% if Auth.loggedIn() == true %}
+           
+                                <li class="nav-item dropdown">
+     
+                                   <a class="nav-link dropdown-toggle navbar-btn button-effect" href="{{ CORE_SITE_PATH }}/account" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account <i class="fas fa-caret-down"></i></a>  
+                          
+                                <div class="dropdown-menu list-unstyled hosting-dropdown" aria-labelledby="navbarDropdown">
+                                    <ul class="dropdown-menu-list list-unstyled">
+                               
+                                        <li> <a class="dropdown-item scroll server-menu" href="{{ CORE_SITE_PATH }}/account"><i style="font-size: 20px;margin-right: 10px;color: #e87383; width:22px" class="far fa-address-card"></i> Dashboard</a></li> 
+                              
+                            {% if Auth.user.affiliate > 0 %}
+                           
+                                          <li> <a class="dropdown-item scroll vps-menu" href="{{ CORE_SITE_PATH }}/account/rewards"><i style="font-size: 20px;margin-right: 10px;color: #745984; width:22px" class="far fa-money-bill-alt"></i> Affiliate</a></li>
+                                </li>
+                            {% endif %}
+                            
+                            {% if Auth.user.isReseller > 0 %}
+                           
+                                          <li> <a class="dropdown-item scroll vps-menu" href="{{ CORE_SITE_PATH }}/reseller-panel/"><i style="font-size: 22px;margin-right: 10px;color: #78c487; width:22px" class="far fa-handshake"></i> Reseller</a></li>
+                                </li>
+                            {% endif %}                             
+     
+                                        <li> <a class="dropdown-item scroll reseller-menu" href="{{ CORE_SITE_PATH }}/account/logout"><i style="font-size: 20px;margin-right: 10px;color: #ff9e06;" class="fas fa-sign-out-alt"></i> LogOut</a></li> 
+                                    </ul>
+                                </div>
+                            </li>
+                                    {% else %}
+                            <li class="nav-item  {{ (block('selected_navigation_link') == 'register') ? 'active' : '' }}">
+                                <a class="nav-link scroll" href="{{ CORE_SITE_PATH }}/register"><i class="fas fa-user-plus"></i> {{ t("register", "register")|title }}</a>
+                            </li>
+                            
+
+                            
+                                    <li class="nav-item" style="margin:0"> <a class="navbar-btn nav-link scroll button-effect"  href="{{ CORE_SITE_PATH }}/account/login"><i class="fas fa-sign-in-alt"></i> Login</a>  </li>
+
+     
+                                    {% endif %}
+                               
+                          
+                        </ul>
+                    </div>
+                  </nav>
+                </div> 
+            
+        
+            </div>
+            
+</header>
+
+
+  {% block body %}{% endblock %}
+
+
+
+ {% include '@themePath/partial/footer.html.twig' %}
+
+<!-- FOOTER BAR -->
+<div class="footer-bar">
+    <div class="container">
+        <div class="row">
+            <div class="footer-cards col-lg-6 col-md-6 col-sm-6">
+                <small>Payment Method</small>
+                <ul class="footer-cards-list list-unstyled">
+                    <li><a href="#"><i class="fab fa-cc-paypal"></i></a></li>
+                    <li><a href="#"><i class="fab fa-cc-mastercard"></i></a></li>
+                    <li><a href="#"><i class="fab fa-cc-visa"></i></a></li>
+                    <li><a href="#"><i class="fab fa-cc-amex"></i></a></li>
+                    <li><a href="#"><i class="fab fa-cc-discover"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-arrow col-lg-6 col-sm-6">
+                <small>Design With<i class="heart fas fa-heart"></i>By YetishareThemes</small>
+                <a href="#main-topbar"><i class="footer-arrow-setting fas fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Header Scroll -->
+    <script>
+        const header = document.getElementById("main-header");
+const scrollUp = "scroll-up";
+const scrollDown = "scroll-down";
+let lastScroll = 0;
+
+
+ 
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll <= 0) {
+    header.classList.remove(scrollUp);
+    return;
+  }
+  
+  if (currentScroll > lastScroll && !header.classList.contains(scrollDown)) {
+    // down
+    header.classList.remove(scrollUp);
+    header.classList.add(scrollDown);
+  } else if (currentScroll < lastScroll && header.classList.contains(scrollDown)) {
+    // up
+    header.classList.remove(scrollDown);
+    header.classList.add(scrollUp);
+  }
+  lastScroll = currentScroll;
+});
+    </script>
+    <!-- Button -->
+
+
+
+
+    {% if block('selected_navigation_link')  == 'home' %}
+        {% if Auth.loggedIn() == true %}
+            {% include '@themePath/partial/_home_js_footer.html.twig' %}
+
+        {% elseif UserHelper.getAllowedToUpload(0) == true and SITE_CONFIG_ENABLE_USER_REGISTRATION == 'yes' %}
+            {% include '@themePath/partial/_home_js_footer.html.twig' %}
+
+        {% endif %}
+        
+    {% endif %}    
+
+<script type="text/javascript" src="{{ theme.getAccountJsPath() }}/bootstrap.js"></script>
+
+    <script type="text/javascript" src="{{ theme.getAccountJsPath() }}/global.js"></script>
+    <script type="text/javascript" src="{{ theme.getAccountJsPath() }}/toastr.js"></script>
+
+ <script>
+ function showSuccessNotification(title, message)
+{
+    var opts = {
+        "closeButton": true,
+        "debug": false,
+        "positionClass": "toast-top-right",
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    };
+    toastr.success(message, title, opts);
+}
+
+      </script>    
+    
+        {% block footerjs %}{% endblock %}
+        <script>
+            $(document).ready(function() {
+                // clear the display: none on notification divs. This doesn't actually
+                // show them, just avoids the flicker on pageload is display: none isn't set.
+                $('.notification').show();
+            });
+            
+                function markInternalNotificationsRead()
+    {
+        $.ajax({
+            dataType: "json",
+            url: "{{ ACCOUNT_WEB_ROOT }}/ajax/internal_notification_mark_all_read",
+            success: function (data) {
+                $('.internal-notification .unread').addClass('read').removeClass('unread');
+                $('.internal-notification .text-bold').removeClass('text-bold');
+                $('.internal-notification .badge').hide();
+                $('.internal-notification .unread-count').html('You have 0 new notifications.');
+                $('.internal-notification .mark-read-link').hide();
+            }
+        });
+    }
+    
+        </script>
+        
+        
+        {% include '@themePath/partial/_ad_block.html.twig' %}
+
+
+
+        {% if _CONFIG_DEMO_MODE == true and (block("selected_navigation_link") is defined and block("selected_navigation_link") == 'home') %}
+            <div class="modal-container" data-autoshow="0">
+                <div class="modal-content">
+                    <div class="boxed boxed--lg">
+                        <h2>Welcome to the Demo Site!</h2>
+                        <hr class="short">
+                        <p>This demo has all the YetiShare paid plugins <strong>{{ PluginHelper.demoPluginsEnabled()?'disabled':'enabled' }}</strong>.{{ PluginHelper.demoPluginsEnabled()?'':' This includes our FTP Uploader, Rewards Program and the Media Converter Plugin.' }}</p>
+                        <p>If you want to see what the core script looks like {{ PluginHelper.demoPluginsEnabled()?'with':'without any' }} paid plugins, go to <a href="{{ WEB_ROOT }}/?_p={{ PluginHelper.demoPluginsEnabled()?'0':'1' }}">{{ WEB_ROOT }}/?_p={{ PluginHelper.demoPluginsEnabled()?'0':'1' }}</a>.</p>
+                        <p>You can test the file manager by logging in above using 'admin' &amp; 'Password@Demo' as the credentials.</p>
+                        <span class="btn btn--primary type--uppercase modal-close">
+                            <span class="btn__text">Close</span>
+                        </span>
+                    </div>
+                <div class="modal-close modal-close-cross"></div></div>
+            </div>
+        {% endif %}
+        
+   
+
+    </body>
+    {% include '@themePath/account/partial/notifications.html.twig' %}
+</html>

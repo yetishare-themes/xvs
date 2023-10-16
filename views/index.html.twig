@@ -1,0 +1,200 @@
+{% extends "partial/layout.html.twig" %}
+
+{% block title %}{{ t("index_page_name", "Upload Files") }}{% endblock %}
+{% block description %}{{ t("index_meta_description", "Upload, share, track, manage your files in one simple to use file host.") }}{% endblock %}
+{% block keywords %}{{ t("index_meta_keywords", "upload, share, track, file, hosting, host") }}{% endblock %}
+{% block selected_navigation_link %}home{% endblock %}
+
+{% block body %}
+
+
+<div class="content-box-wrap">
+ 
+    <!-- UPLOAD-BOX -->
+    <section id="upload-box" class="content-box-section text-white text-center">
+        <div class="container">
+               <div class="content-box-text">
+  
+                             
+            </div>         
+        </div>
+    </section>
+</div>
+
+
+
+  
+
+
+
+      <!-- FIELD -->
+      <div class="field-background">
+        <div class="container">
+        <div class="row">
+
+               
+               <div class="col" style="font-size:16px">
+                <div class="field" style="width: 97.3%;">  
+            <form id="uu_upload" name="uu_upload" method="post" enctype="multipart/form-data" action="#">
+            
+            
+                  {% if Auth.loggedIn() == true %}
+                      {% set uploadbox = 'uploadFiles(null, true); return false;' %}
+                    {% elseif UserHelper.getAllowedToUpload(0) == true and SITE_CONFIG_ENABLE_USER_REGISTRATION == 'yes' %}
+                        {% set uploadbox = "location.href = '"~ CoreHelper.getCoreSitePath()~ "/register_non_user';" %}
+                    {% else %}
+                       {% set uploadbox = "location.href = '"~ CoreHelper.getCoreSitePath()~ "/account/login/';" %}
+                    {% endif %}
+                   
+                        <div id="html5_con" style="display: block;">
+                    	<div class="row">
+                    		<div class="col-sm-12">
+                    			<center>
+                    			   <video disableRemotePlayback  muted="muted" src="{{ theme.getAccountImagePath() }}/cloud-data.mp4" type="video/mp4" autoplay="autoplay" loop="loop" oncontextmenu="return false;" style="width:270px"></video>
+                    				<p class="extra-bottom"><span><small>
+                    				Max file size : <b>{{ CoreHelper.formatSize(UserHelper.getMaxUploadFilesize())  }}</b>, Max files : <b>{{ UserHelper.getMaxUploadsAtOnce() }}</b>, Max Remote Urls : <b>{{ UserHelper.getMaxRemoteUrls() }}</b>
+                    				</small></span></p>
+                    				<div id="uploadifive-html_file_upload" class="uploadifive-button" style="height: 5rem; line-height: 5rem; overflow: hidden; position: relative; text-align: center; width: 100%; max-width: 476px; display: block;">
+                    					<div class="icon baseline1">
+                    						<svg width="25" height="25" viewBox="0 0 25 25">
+                    							<path d="M21.669 11l-1.385 9h-16.568l-1.385-9h19.338zm-13.697-9h-6.972l.714 5h2.021l-.429-3h3.694c1.112 1.388 1.952 2 4.277 2h9.283l-.2 1h2.04l.6-3h-11.723c-1.978 0-2.041-.417-3.305-2zm16.028 7h-24l2 13h20l2-13z"></path>
+                    						</svg>
+                    					</div>&nbsp;&nbsp;Select Files to Upload
+                    	
+                    					<input  onclick="{{uploadbox}}" type="text" style="font-size: 10rem; opacity: 0; position: relative; top: -5rem; z-index: 999; cursor: pointer; max-width: 476px; max-height: 5rem;" multiple="multiple">
+                    				</div>
+                    				<div id="queue"></div>
+                    			</center>
+                    		</div>
+                    	</div>
+                    	<div class="row">
+        
+                    </div>
+                </form>  
+                </div>
+            </div>   
+            </div>
+        </div>
+  </div>
+  
+  
+  
+
+    
+    
+<section class="features-section" id="home-feature-section">
+    <div class="container">
+    <div class="text-center text-white feature-heading">
+        <h1 style="color:#1e222f">Our Features!</h1>
+        <p style="color:#1e222f"></p>
+    </div>
+        <div class="row"> 
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="feature-plan-box text-center" style="border-top: 2px solid #ffc107;">
+                    <figure class="game-feature-image-list">
+                      <i class="fas fa-rocket" style="font-size: 4.5em;"></i>
+                    </figure>
+                    <h3>High Speed</h3>
+                    <p class="mb-0">We guarantee the highest file download speed at our service</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="feature-plan-box text-center" style="border-top: 2px solid #ffc107;">
+                    <figure class="game-feature-image-list">
+                        <i class="fas fa-shield-alt" style="font-size: 4.5em;"></i>
+                    </figure>
+                    <h3>Stronger</h3>
+                    <p class="mb-0">We provide the highest level of protection for your files and reliable ways to store your information!</p>
+                </div>
+            </div>  
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="feature-plan-box text-center" style="border-top: 2px solid #ffc107;">
+                    <figure class="game-feature-image-list">
+                       <i class="fas fa-dollar-sign" style="font-size: 4.5em;"></i>
+                    </figure>
+                    <h3>Affiliate Program</h3>
+                    <p class="mb-0">You can earn money from your uploaded files</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="feature-plan-box text-center" style="border-top: 2px solid #ffc107;">
+                    <figure class="game-feature-image-list">
+                        <i class="fas fa-globe-europe" style="font-size: 4.5em;"></i>
+                    </figure>
+                    <h3>Easy Share</h3>
+                    <p class="mb-0">Quickly and easily share your data with a single click</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>    
+    
+ <div class="clipboard-placeholder-wrapper">
+    <button id="clipboard-placeholder-btn" type="button" data-clipboard-action="copy" data-clipboard-target="#clipboard-placeholder"></button>
+    <div id="clipboard-placeholder"></div>
+</div>
+
+    
+   <!-- uploader -->
+<div id="fileUploadWrapper" class="modal fade file-upload-wrapper" style="margin-top:27px">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            {{ t('loading_please_wait', 'Loading, please wait...') }}
+        </div>
+    </div>
+</div>
+
+<!-- links -->
+<div id="fileLinksModal" class="modal fade custom-width file-links-wrapper" style="z-index: 10000;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">{{ t('file_urls', 'File Urls') }}</h2>
+            </div>
+
+            <div class="modal-body">
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <div class="modal-icon-left"><img src="{{ theme.getAccountImagePath() }}/modal_icons/link.png"/></div>
+                    </div>
+
+                    <div class="col-md-9">
+                        <samp>
+                             <div id="popupContentUrls" class="link-section" onClick="selectAllText(this);
+                                                                return false;"></div>
+                                 <div id="popupContentHTMLCode" class="link-section" style="display: none;" onClick="selectAllText(this);
+                                                                return false;"></div>
+                                 <div id="popupContentBBCode" class="link-section" style="display: none;" onClick="selectAllText(this);
+                                                                return false;"></div>
+                        </samp>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <div class="row">
+                    <div class="col-md-8 text-left">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-warning active" onClick="showLinkSection('popupContentUrls', this);
+                                    return false;">{{ t('file_urls', 'File Urls') }}</button>
+    <button type="button" class="btn btn-warning" onClick="showLinkSection('popupContentHTMLCode', this);
+                                    return false;">{{ t('urls_html_code', 'HTML Code') }}</button>
+                            <button type="button" class="btn btn-warning" onClick="showLinkSection('popupContentBBCode', this);
+                                    return false;">{{ t('urls_bbcode', 'Forum BBCode') }}</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">{{ t('close', 'Close') }}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+

@@ -1,0 +1,25 @@
+{% extends "partial/layout.html.twig" %}
+
+{% block title %}{{ t("payment_complete_page_name", "Payment Complete") }}{% endblock %}
+{% block description %}{{ t("payment_complete_meta_description", "Payment Complete") }}{% endblock %}
+{% block keywords %}{{ t("payment_complete_meta_keywords", "payment, complete, file, hosting, site") }}{% endblock %}
+
+{% block body %}
+<section class="height-80 text-center">
+    <div class="container pos-vertical-center">
+        <div class="row">
+            <div class="col-md-7 col-lg-5">
+                <h2>{{ t("payment_complete_page_name", "Payment Complete") }}</h2>
+
+                <p>{{ t('once_we_receive_notication_from_gateway_your_account_will_be_upgraded', 'Once we receive notification from the payment gateway, your account will be upgraded/extended. Please allow up to an hour for this to complete.') }}</p>
+                <p>{{ t('you_can_check_your_accout_status_by_going', 'You can check your account status by going ') }}<a href="{{ WEB_ROOT }}/upgrade">{{ t('here', 'here') }}</a>.</p>
+                <span class="type--fine-print block">
+                    <a href="{{ CORE_SITE_PATH }}/account">{{ t('go_to_your_account', 'Go to your account') }} »</a>
+                </span>
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>
+{% endblock %}

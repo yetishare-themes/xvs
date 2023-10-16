@@ -1,0 +1,103 @@
+{% extends "partial/layout.html.twig" %}
+
+{% block title %}{{ t("faq_page_name", "FAQ") }}{% endblock %}
+{% block description %}{{ t("faq_meta_description", "Frequently Asked Questions") }}{% endblock %}
+{% block keywords %}{{ t("faq_meta_keywords", "faq, frequently, asked, questions, file, hosting, site") }}{% endblock %}
+{% block selected_navigation_link %}faq{% endblock %}
+
+{% block body %}
+  <!-- ACCORDION -->
+<section class="accordion-section">
+    <div class="container">
+        <div class="accordion-section-text">
+             <h1 class="text-center">Frequently Asked Questions</h1>
+        </div>
+        <div id="accordion">
+            <div class="accordion-card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    {{ t('faq_q1_question', 'Is this free?') }}
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+                <div class="card-body">
+                    {{ t('faq_q1_answer', 'Yes, uploading and downloading is 100% Free for all users. We offer premium accounts which allows for greater flexibility with uploading/downloading.') }}
+                </div>
+              </div>
+            </div>
+            <div class="accordion-card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    What types of Operating Systems do you offer?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                <div class="card-body">
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur adipisci velit. Neque porro quisquam estem, qui dolorem ipsum quia dolor sit amet, consectetur adipisci velit sed quia non numquam.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    What type of control panels do you offer?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                <div class="card-body">
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur adipisci velit. Neque porro quisquam estem, qui dolorem ipsum quia dolor sit amet, consectetur adipisci velit sed quia non numquam.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-card">
+                <div class="card-header" id="headingFour">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Why should I choose VPS Hosting from NetixHost?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
+                  <div class="card-body">
+                      Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur adipisci velit. Neque porro quisquam estem, qui dolorem ipsum quia dolor sit amet, consectetur adipisci velit sed quia non numquam.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-card">
+                <div class="card-header" id="headingFive">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        How should I choose the right VPS Hosting plan for my website?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive">
+                  <div class="card-body">
+                      Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur adipisci velit. Neque porro quisquam estem, qui dolorem ipsum quia dolor sit amet, consectetur adipisci velit sed quia non numquam.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-card">
+                <div class="card-header" id="headingSix">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Do you provide Windows VPS hosting?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix">
+                  <div class="card-body">
+                      Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur adipisci velit. Neque porro quisquam estem, qui dolorem ipsum quia dolor sit amet, consectetur adipisci velit sed quia non numquam.
+                  </div>
+                </div>
+              </div>
+          </div>
+   </div>
+</section>  
+{% endblock %}

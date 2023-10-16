@@ -1,0 +1,106 @@
+{% extends "partial/layout.html.twig" %}
+
+{% block title %}{{ file.originalFilename }}{% endblock %}
+{% block description %}{{ file.description|length > 0 ? file.description|slice(0, 250) : t("file_download_description", "Download file")~' - '~file.originalFilename }}{% endblock %}
+{% block keywords %}{{ file.getFileKeywords() }}{% endblock %}
+
+{% block body %}
+    <section>
+        <div class="container">
+            <div class="row align-items-center justify-content-around download-page">
+                <div class="col-md-12 text-center">
+                    <h2>
+                        {{ file.originalFilename }}
+                    </h2>
+                </div>
+                    
+                {% if UserHelper.showSiteAdverts() %}
+                    <div class="col-md-12 text-center advert-wrapper top-advert">
+                        {{ file.shouldShowAdultAdvert() == true ? SITE_CONFIG_ADULT_ADVERT_DELAYED_REDIRECT_TOP|raw : SITE_CONFIG_ADVERT_DELAYED_REDIRECT_TOP|raw }}
+                    </div>
+                {% endif %}
+
+                <div class="col-md-12">
+                    <table class="border--round table--alternate-row download-page-simple-timed text-center">
+                        <tbody>
+                            <tr>
+                                <th class="col-md-3 responsiveInfoTable">
+                                    <strong>
+                                        {{ file.originalFilename }} ({{ file.getFormattedFilesize() }})
+                                    </strong>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="btn-free-element">
+                                        <a href="#" onclick="triggerFreeDownload(); return false;" class="btn btn--primary">
+                                            <span class="btn__text">
+                                                {{ t("file_download_description", "Download file")|upper }}
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="download-timer" style="display:none;">
+                                        <a href="#" onclick="return false;" class="btn btn-subtle">
+                                            <span class="btn__text">
+                                                <i class="fas fa-spinner fa-pulse"></i>
+                                                {{ t('wait', 'wait')|upper }} <span class="download-timer-seconds"></span>&nbsp;{{ t('sec', 'sec')|upper }}.
+                                            </span>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                {% if UserHelper.showSiteAdverts() %}
+                    <div class="col-md-12 text-center advert-wrapper bottom-advert">
+                        {{ file.shouldShowAdultAdvert() == true ? SITE_CONFIG_ADULT_ADVERT_DELAYED_REDIRECT_BOTTOM|raw : SITE_CONFIG_ADVERT_DELAYED_REDIRECT_BOTTOM|raw }}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+
+    {% include '@themePath/partial/_premium_benefits.html.twig' %}
+{% endblock %}
+
+{% block footerjs %}
+<script>
+    var seconds = {{ additionalSettings['download_wait']|number_format }};
+    var started = false;
+    function display()
+    {
+        $('.btn-free-element').hide();
+        $('.download-timer').show();
+        if (seconds == 0)
+        {
+            $('.download-timer').html("<a class='btn btn--primary' href='{{ file.getNextDownloadPageLink() }}'><span class='btn__text'>{{ t("download_or_view_now", "download / view now")|upper }}</span></a>");
+        } else
+        {
+            $('.download-timer-seconds').html(seconds);
+        }
+        seconds--;
+    }
+    
+    function triggerFreeDownload() {
+        if(started === true) {
+            return;
+        }
+        
+        started = true;
+        display();
+        countdownTimer = setInterval('display()', 1000);
+    }
+
+    $(document).ready(function () {
+        display();
+        $('.download-timer-seconds').html({{ additionalSettings['download_wait']|number_format }});
+        countdownTimer = setInterval('display()', 1000);
+    });
+</script>
+
+{% if downloadPageData['additional_javascript_code'] is defined %}
+    {{ downloadPageData['additional_javascript_code']|raw }}
+{% endif %}
+{% endblock %}

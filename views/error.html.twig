@@ -1,0 +1,38 @@
+{% extends "partial/layout.html.twig" %}
+
+{% block title %}{{ t("error_page_name", "Error") }}{% endblock %}
+{% block description %}{{ t("error_meta_description", "Error") }}{% endblock %}
+{% block keywords %}{{ t("error_meta_keywords", "error, image, picture, pic, img, hosting, sharing, upload, storage, site, website") }}{% endblock %}
+
+{% block body %}
+    <section class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="margin-top: 50px;">{{ t("error_page_name", "Error") }}</h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="alert bg--error" style="margin-bottom: 30px; background: #e4e6e9; color: #1c202d;">
+
+                        <div class="alert__body">
+                            {{ error_msg }}
+                        </div>
+                    </div>
+                            <a class="choose-btn button-effect"href="{{ CORE_SITE_PATH }}" style="
+                            margin-bottom: 30px;
+                            font-size: 1.3em;
+                            background: #1e222f;
+                            text-transform: capitalize;
+                            color: #ecf1ff;
+                            ">
+                            {{ t('go_back_to_home', 'Go back to home') }}</a>
+
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

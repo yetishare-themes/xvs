@@ -1,0 +1,136 @@
+{% extends "partial/layout.html.twig" %}
+
+{% block title %}{{ pageTitlePrepend }} {{ t("account", "account")|title }}{% endblock %}
+{% block description %}{{ pageTitlePrepend }} {{ t("upgrade_meta_description", "Your Account") }}{% endblock %}
+{% block keywords %}{{ pageTitlePrepend|lower }}{{ t("upgrade_meta_keywords", ", account, paid, membership, upload, download, site") }}{% endblock %}
+{% block selected_navigation_link %}upgrade{% endblock %}
+
+
+{% block body %}
+
+
+
+                  
+                        
+
+
+            
+
+<div class="content-box-wrap">
+ 
+    <!-- PREMIUM-PAGE -->
+    <section class="premium-text-section text-white text-center">
+        <div class="container">
+    
+
+    
+    {% if msg_page_errors is defined %}
+    <div class="text-center" style="margin-bottom: 59px;">
+                                               
+                            <span style="
+                            display: block;
+                            background: rgb(237, 185, 185);
+                            padding: 5px 16px;
+                            border: 2px solid #ebc3c3;
+                            border-radius: 5px;
+                            font-weight: 300;
+                            font-size: 15px;
+                            color: #000;
+                            font-weight: 700;
+                            color: #3c3c3c;"><span style="font-size: 27px;">Error!</span> <br> {% if msg_page_errors is defined %}{{ msg_page_errors|join('. ') }}{% endif %}</span>
+         
+        </div>                        
+
+                        {% elseif msg_page_successes is defined %}
+ <div class="text-center" style="margin-bottom: 59px;">
+                                               
+                            <span style="
+                            display: block;
+                            background: rgb(192, 237, 185);
+                            padding: 5px 16px;
+                            border: 2px solid #9cc895;
+                            border-radius: 5px;
+                            font-weight: 300;
+                            font-size: 15px;
+                            color: #000;
+                            font-weight: 700;
+                            color: #3c3c3c;
+                            font-family: Russo One;"><span style="font-size: 27px;">Success!</span> <br> {% if msg_page_successes is defined %}{{ msg_page_successes|join('. ') }}{% endif %}</span> 
+                        </div>
+                        {% endif %}    
+        
+
+               <div class="content-box-text">
+                <h1 class="mb-xl-4 mb-lg-4 mb-md-3 mb-sm-2">Premium Plans</h1>
+                <p class="mb-0">Enjoy the benefits of a PREMIUM account right now!</p>
+            </div>         
+        </div>
+    </section>
+</div>
+
+
+               
+               
+    <!-- PREMIUM PLANS -->
+    <section class="premium-section" id="premium-plans-section" style="padding-bottom:15px;">
+        <div class="container">
+            <div class="premium-plans-inner" >
+            
+            <div class="row">
+
+            {% for pricingRow in pricingRows %}
+            
+                {% set price = pricingRow['price']|split('.') %}
+            
+                <div class="col-lg-3 col-md-6 col-sm-6 text-center">
+                    <div class="plan variation-{{ loop.index}} mt-0 mb-lg-0 mb-4">
+                        <h4 style="font-family: Russo One;" class="mb-xl-4 mb-lg-4 mb-md-4 mb-sm-3">{{ pricingRow['_label'] }}</h4>
+                        
+                        <div class="">                         
+                           <div class="price-color-{{loop.index}}">
+                            <h2 style="font-family: Russo One;font-size: 42px;" class="mb-xl-2">{{ SITE_CONFIG_COST_CURRENCY_SYMBOL}}{{ price[0] }}.<span>{{ price[1] }}</span></h2>
+                            <small class="start">{{ SITE_CONFIG_COST_CURRENCY_SYMBOL }}{{ pricingRow['_per_day_cost'] }} {{ t('upgrade_boxes_per_day', 'per day')|title }}:</small>
+                           </div>
+
+
+                        <div class="plan-btn">
+                            <span style="cursor:default" class="plan-btn-{{ loop.index}}  button-effect" >Non-Recurring</span>
+                        </div>
+                            
+                            <ul class="list-unstyled text-left" style="width: 100%;">
+                                        <li ><i style="font-size: 13px; line-height: 24px;" class="fas fa-check float-left"></i><span style="font-size: 13px;" class="specs pl-xl-3 pl-lg-3 pl-md-3 pl-sm-3 pl-3">Maximum Speed</span></li>
+                                        <li><i style="font-size: 13px; line-height: 24px;" class="fas fa-check float-left"></i><span style="font-size: 13px;" class="specs pl-xl-3 pl-lg-3 pl-md-3 pl-sm-3 pl-3">Daily bandwidth: {{CoreHelper.formatSize(UserHelper.getDailyLimitBW(2),'both',true,0) }}</span></li>
+                                        <li><i style="font-size: 13px; line-height: 24px;" class="fas fa-check float-left"></i><span style="font-size: 13px;" class="specs pl-xl-3 pl-lg-3 pl-md-3 pl-sm-3 pl-3">Play videos Online</span> <i onclick="alert('Only MP4 Videos Can be watched Online');" title="Only MP4 Videos Can be watched Online" class="fas fa-question-circle"></i></li>
+                                        <li><i style="font-size: 13px; line-height: 24px;" class="fas fa-check float-left"></i><span style="font-size: 13px;" class="specs pl-xl-3 pl-lg-3 pl-md-3 pl-sm-3 pl-3">No advertising</span></li>
+                                        <li><i style="font-size: 13px; line-height: 24px;" class="fas fa-check float-left"></i><span style="font-size: 13px;" class="specs pl-xl-3 pl-lg-3 pl-md-3 pl-sm-3 pl-3">Download without delay</span></li>
+                            </ul>
+                            {{ PluginHelper.outputPaymentLinks({'days': pricingRow['_days'], 'price': pricingRow['price'], 'user_level_pricing_id': pricingRow['id'], 'user_level_package_id': packageLevelId})|raw }}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+               
+            </div>
+            </div>
+              <p style="font-size: 14px;font-weight:700">Your purchase is 100% safe. All transactions are secure and encrypted.</p>
+        </div>
+        
+       
+    </section>
+
+
+
+    
+    {% if upgradePagePluginMiddle|length > 0 %}
+        {% for pluginKey,upgradePagePluginMiddleItem in upgradePagePluginMiddle %}
+            {{ upgradePagePluginMiddleItem['response_html']|raw }}
+        {% endfor %}
+    {% endif %}
+
+
+
+
+
+
+
+{% endblock %}

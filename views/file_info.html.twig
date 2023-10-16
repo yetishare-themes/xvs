@@ -1,0 +1,95 @@
+{% extends "partial/layout.html.twig" %}
+
+{% block title %}{{ t("share_file_title", "File Information") }}{% endblock %}
+{% block description %}{{ t("file_information_description", "Information about") }} {{ file.originalFilename }}{% endblock %}
+{% block keywords %}{{ file.originalFilename|lower }}{{ t("file_information_meta_keywords", ", share, information, file, upload, download, site") }}{% endblock %}
+
+{% block body %}
+    <section class="bg--secondary space--sm">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="text-center">{{ t("share_file_title", "File Information") }}</h2>
+                    <p class="text-center">{{ t("file_information_description", "Information about") }} "{{ file.originalFilename }}"</p>
+
+                    <div class="boxed boxed--lg boxed--border">
+                        <div class="text-block text-center">
+                            <img src="{{ file.getLargeIconPath()|raw }}" alt="{{ file.extension }}" class="image--md">
+                            <span class="h3">{{ file.originalFilename }}</span>
+                        </div>
+                        <div class="text-block clearfix text-center">
+                            <ul class="row row--list">
+                                <li class="col-md-4">
+                                    <span class="type--fine-print block">Filesize:</span>
+                                    <span>{{ file.getFormattedFilesize() }}</span>
+                                </li>
+                                <li class="col-md-4">
+                                    <span class="type--fine-print block">Uploaded:</span>
+                                    <span>{{ file.getFormattedUploadedDate() }}</span>
+                                </li>
+                                <li class="col-md-4">
+                                    <span class="type--fine-print block">Status:</span>
+                                    <span>{{ file.getStatusLabel()|title }}</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {% if file.status == 'active' %}
+                        <div class="boxed boxed--border">
+                            <h4>{{ t("download_urls", "download urls")|title }}</h4>
+                            <ul>
+                                <li class="clearfix">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <span class="type--fine-print">{{ t('file_page_link', 'File Page Link')|title }}</span>
+                                            <pre>{{ file.getFullShortUrl() }}</pre>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <span class="type--fine-print">{{ t('html_code', 'HTML Code') }}</span>
+                                            <pre>{{ file.getHtmlLinkCode()|raw }}</pre>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <span class="type--fine-print">{{ t('forum_code', 'forum code')|title }}</span>
+                                            <pre>{{ file.getForumLinkCode()|raw }}</pre>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <span class="type--fine-print">{{ t('statistics_url', 'statistics url')|title }}</span>
+                                            <pre>{{ file.getStatisticsUrl() }}</pre>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    {% endif %}
+
+                    {% if file.status == 'active' %}
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <button class="btn btn--primary type--uppercase" onclick="window.location = '{{ file.getFullShortUrl() }}'; return false;">{{ t("download", "Download") }}</button>
+                            </div>
+                        </div>
+                    {% endif %}
+
+                </div>
+            </div>
+            <!--end of row-->
+            <input type="hidden" name="submitted" value="1"/>
+        </div>
+        <!--end of container-->
+    </section>
+
+{% endblock %}

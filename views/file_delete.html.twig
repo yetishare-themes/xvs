@@ -1,0 +1,72 @@
+{% extends "partial/layout.html.twig" %}
+
+{% block title %}{{ t("delete_file_page_name", "Delete File") }}{% endblock %}
+{% block description %}{{ t("delete_file_meta_description", "Delete File") }}{% endblock %}
+{% block keywords %}{{ t("delete_file_meta_keywords", "delete, remove, file") }}{% endblock %}
+
+{% block body %}
+    <section class="bg--secondary space--sm">
+        <div class="container">
+            <form method="post" role="form" action="{{ file.getDeleteUrl(false, true) }}" autocomplete="off">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-center">{{ t("delete_file_page_name", "Delete File") }}</h2>
+                        {% if file.status == 'active' %}
+                            <p class="text-center">{{ t("file_delete_title_page_description_left", "Please confirm whether to delete the file below.") }}</p>
+                        {% endif %}
+                        
+                        {% if msg_page_errors is defined %}
+                        <div class="alert bg--error">
+                            <div class="alert__body"><i class="fa fa-exclamation-triangle color--error"></i>&nbsp;&nbsp;{% if msg_page_errors is defined %}{{ msg_page_errors|join('. ') }}{% endif %}</div>
+                        </div>
+                        {% elseif msg_page_successes is defined %}
+                        <div class="alert bg--success">
+                            <div class="alert__body"><i class="fa fa-check color--success"></i>&nbsp;&nbsp;{% if msg_page_successes is defined %}{{ msg_page_successes|join('. ') }}{% endif %}</div>
+                        </div>
+                        {% endif %}
+
+                        <div class="boxed boxed--lg boxed--border">
+                            <div class="text-block text-center">
+                                <img src="{{ file.getLargeIconPath()|raw }}" alt="{{ file.extension }}" class="image--md">
+                                <span class="h3">{{ file.originalFilename }}</span>
+                            </div>
+                            <div class="text-block clearfix text-center">
+                                <ul class="row row--list">
+                                    <li class="col-md-4">
+                                        <span class="type--fine-print block">Filesize:</span>
+                                        <span>{{ file.getFormattedFilesize() }}</span>
+                                    </li>
+                                    <li class="col-md-4">
+                                        <span class="type--fine-print block">Uploaded:</span>
+                                        <span>{{ file.getFormattedUploadedDate() }}</span>
+                                    </li>
+                                    <li class="col-md-4">
+                                        <span class="type--fine-print block">Status:</span>
+                                        <span>{{ file.getStatusLabel()|title }}</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        {% if file.status == 'active' %}
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-4">
+                                <button class="btn btn--sm type--uppercase" onclick="window.location='{{ file.getFullShortUrl() }}'; return false;">{{ t("cancel", "Cancel") }}</button>
+                            </div>
+                            <div class="col-md-4">
+                                <button class="btn btn--primary type--uppercase" type="submit">{{ t("delete_file", "Delete File") }}</button>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                    </div>
+                </div>
+                <!--end of row-->
+                <input type="hidden" name="submitted" value="1"/>
+            </form>
+        </div>
+        <!--end of container-->
+    </section>
+
+{% endblock %}

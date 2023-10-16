@@ -1,0 +1,23 @@
+{% extends "partial/layout.html.twig" %}
+
+{% block title %}403{% endblock %}
+{% block description %}{{ t("error_page_403_detail", "Unauthorised!") }}{% endblock %}
+{% block keywords %}{{ t("error_page_403_meta_keywords", "error, image, picture, pic, img, hosting, sharing, upload, storage, site, website") }}{% endblock %}
+
+{% block body %}
+    <section class="height-80 text-center">
+        <div class="container pos-vertical-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="h1--large">403</h1>
+                    <p class="lead">
+                        {{ t("error_page_403_detail", "Unauthorised!") }}
+                    </p>
+                    <a href="{{ CORE_SITE_PATH }}">« {{ t('go_back_to_home', 'Go back to home') }}</a>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+{% endblock %}

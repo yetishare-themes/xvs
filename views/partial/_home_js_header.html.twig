@@ -1,0 +1,100 @@
+     <link rel="stylesheet" href="{{ theme.getAccountCssPath() }}/file-upload.css" />
+         <script type="text/javascript" src="{{ theme.getAccountJsPath() }}/evolution.js"></script>
+        <script type="text/javascript" src="{{ CORE_SITE_PATH }}/assets/js/uploader.js?r={{ date().timestamp }}"></script>
+
+        <script type="text/javascript" src="{{ theme.getAccountJsPath() }}/zeroClipboard/ZeroClipboard.js"></script>
+        <script type="text/javascript" src="{{ CORE_SITE_PATH }}/js/translations.js"></script>
+        
+
+        
+        
+        <script type="text/javascript">
+        
+        var clipboard = null;
+        	function copyToClipboard(ele)
+	{
+            destroyClipboard();
+            clipboard = new Clipboard(ele);
+            clipboard.on('success', function(e) {
+                showSuccessNotification('Success', 'Copied to clipboard.');
+                $('#clipboard-placeholder').html('');
+            });
+
+            clipboard.on('error', function(e) {
+                showErrorNotification('Error', 'Failed copying to clipboard.');
+            });
+	}
+	
+	function destroyClipboard()
+	{
+            if(clipboard != null)
+            {
+                clipboard.destroy();
+            }
+	}
+	
+    progressWidget = null;
+    function showProgressWidget(intialText, title, complete, timeout)
+    {
+		if(typeof(timeout) == "undefined")
+		{
+			timeout = 0;
+		}
+		
+        if (progressWidget != null)
+        {
+            progressWidget.hide();
+        }
+
+        var opts = {
+            "closeButton": false,
+            "debug": false,
+            "positionClass": "toast-bottom-right",
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": timeout,
+            "extendedTimeOut": "0",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut",
+            "onclick": function () {
+                showUploaderPopup();
+            }
+        };
+
+        if (complete == true)
+        {
+            progressWidget = toastr.success(intialText, title, opts);
+        }
+        else
+        {
+            progressWidget = toastr.info(intialText, title, opts);
+        }
+    }
+
+
+                function updateProgressWidgetText(text)
+                {
+                    if (progressWidget == null)
+                    {
+                        return false;
+                    }
+            
+                    $(progressWidget).find('.toast-message').html(text);
+                }
+            
+                function checkShowUploadProgressWidget()
+                {
+                    if (uploadComplete == false)
+                    {
+                        showProgressWidget({{ t('file_manager_uploading', 'Uploading...')|json_encode()|raw }}, {{ t('file_manager_upload_progress', 'Upload Progress:')|json_encode()|raw }}, false);
+                    }
+                }
+            
+                function checkShowUploadFinishedWidget()
+                {
+                    showProgressWidget({{ t('file_manager_upload_complete', 'Upload complete.')|json_encode()|raw }}, {{ t('file_manager_upload_progress', 'Upload Progress:')|json_encode()|raw }}, true, 6000);
+                }
+        </script>
